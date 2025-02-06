@@ -35,9 +35,8 @@
   "name":"Fishing For Clues",
   "resources":[
     {"id":{"name":"buttonScript","path":"objects/buttonScript/buttonScript.yy",},},
-    {"id":{"name":"endGameButton","path":"objects/endGameButton/endGameButton.yy",},},
+    {"id":{"name":"HourCounter","path":"objects/HourCounter/HourCounter.yy",},},
     {"id":{"name":"LakeCreator","path":"objects/LakeCreator/LakeCreator.yy",},},
-    {"id":{"name":"turnCounter","path":"objects/turnCounter/turnCounter.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},

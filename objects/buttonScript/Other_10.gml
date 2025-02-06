@@ -1,2 +1,2 @@
 // trigger when button is pressed
-global.turns -= 1;
+global.hours -= 1;
