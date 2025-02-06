@@ -26,17 +26,19 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	draw_primitive_end();
 	surface_reset_target();  
 	var sprite = sprite_create_from_surface(sprite_surface_id, 0, 0, 200, 200, false, false, 100, 100); // Create a sprite from it
+	sprite_collision_mask(sprite, false, 2, 0,200,200,0, bboxkind_precise, 0);
 	surface_free(sprite_surface_id);
 	return sprite;
 }
-ZoneSprite = draw_lake(0, 0, 100, c_aqua, 1, 4);
+var slice_count = 8;
+ZoneSprite = draw_lake(0, 0, 100, c_aqua, 1, slice_count);
 
 // Clean up the surface after creating the sprite
 
 
 
 var slice_list = [];
-var slice_count = 4;
+
 object_set_sprite(Zone, ZoneSprite);
 for (var i = 0; i < slice_count; i++)
 {   
