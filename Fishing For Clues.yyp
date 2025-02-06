@@ -34,7 +34,11 @@
   },
   "name":"Fishing For Clues",
   "resources":[
+    {"id":{"name":"ButtonFindAngler","path":"objects/ButtonFindAngler/ButtonFindAngler.yy",},},
+    {"id":{"name":"ButtonGoFish","path":"objects/ButtonGoFish/ButtonGoFish.yy",},},
+    {"id":{"name":"ButtonScan","path":"objects/ButtonScan/ButtonScan.yy",},},
     {"id":{"name":"buttonScript","path":"objects/buttonScript/buttonScript.yy",},},
+    {"id":{"name":"ButtonSendData","path":"objects/ButtonSendData/ButtonSendData.yy",},},
     {"id":{"name":"HourCounter","path":"objects/HourCounter/HourCounter.yy",},},
     {"id":{"name":"LakeCreator","path":"objects/LakeCreator/LakeCreator.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},

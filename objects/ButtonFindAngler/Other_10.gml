@@ -1,4 +1,4 @@
-global.hours -= 2;
+global.hours -= 4;
 
 if (global.hours <= 0) {
 	global.hours = 0; // this is so that display shows 0 before game restarts
