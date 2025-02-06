@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,10 +34,14 @@
   },
   "name":"Fishing For Clues",
   "resources":[
+    {"id":{"name":"buttonScript","path":"objects/buttonScript/buttonScript.yy",},},
+    {"id":{"name":"endGameButton","path":"objects/endGameButton/endGameButton.yy",},},
     {"id":{"name":"LakeCreator","path":"objects/LakeCreator/LakeCreator.yy",},},
+    {"id":{"name":"turnCounter","path":"objects/turnCounter/turnCounter.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
+    {"id":{"name":"buttonIcon","path":"sprites/buttonIcon/buttonIcon.yy",},},
     {"id":{"name":"ZoneImg","path":"sprites/ZoneImg/ZoneImg.yy",},},
   ],
   "resourceType":"GMProject",
