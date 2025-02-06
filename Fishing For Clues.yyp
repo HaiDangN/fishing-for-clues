@@ -37,6 +37,8 @@
     {"id":{"name":"LakeCreator","path":"objects/LakeCreator/LakeCreator.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
+    {"id":{"name":"ZoneImg","path":"sprites/ZoneImg/ZoneImg.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
