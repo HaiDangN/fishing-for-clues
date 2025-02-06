@@ -28,10 +28,11 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	var sprite = sprite_create_from_surface(sprite_surface_id, 0, 0, 200, 200, false, false, 100, 100); // Create a sprite from it
 	sprite_collision_mask(sprite, false, 2, 0,200,200,0, bboxkind_precise, 0);
 	surface_free(sprite_surface_id);
+	draw_set_alpha(1);
 	return sprite;
 }
 var slice_count = 8;
-ZoneSprite = draw_lake(0, 0, 100, c_aqua, 1, slice_count);
+ZoneSprite = draw_lake(0, 0, 100, c_white, 1, slice_count);
 
 // Clean up the surface after creating the sprite
 
@@ -45,7 +46,11 @@ for (var i = 0; i < slice_count; i++)
 	var slice = instance_create_layer(x, y, "Instances", Zone);
 	
 	slice.sprite_index = ZoneSprite
-    slice.image_angle = (i * 360) / slice_count;
+    slice.image_angle = 45 - ((i * 360) / slice_count);
+	var text_x = x + lengthdir_x(275, 45 - ((i * 360) / slice_count) + ((0.5 * 360) / slice_count));
+	var text_y = y + lengthdir_y(275, 45 - ((i * 360) / slice_count) + ((0.5 * 360) / slice_count));
+	draw_text_transformed_color(text_x, text_y, i + 1, 3, 3, 0, c_black, c_black, c_black, c_black, 1);
+	
 	slice.image_xscale *= 2;
 	slice.image_yscale *= 2;
     slice_list[i] = slice;
