@@ -2,7 +2,7 @@
 
 
 function draw_lake(_x, _y, _radius, _col, _alpha, zones){
-	var sprite_surface_id = surface_create(_radius * 2, _radius * 2); // Create a blank surface
+	var sprite_surface_id = surface_create(_radius * 2 + 10, _radius * 2 + 10); // Create a blank surface
 	surface_set_target(sprite_surface_id);       // Start drawing on the surface
 	draw_clear_alpha(c_black, 0);        // Transparent background
 	//draw_circle(1, 1, 20, false);
