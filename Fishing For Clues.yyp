@@ -45,6 +45,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
     {"id":{"name":"buttonIcon","path":"sprites/buttonIcon/buttonIcon.yy",},},
+    {"id":{"name":"SpriteBackground","path":"sprites/SpriteBackground/SpriteBackground.yy",},},
     {"id":{"name":"SpriteFindAngler","path":"sprites/SpriteFindAngler/SpriteFindAngler.yy",},},
     {"id":{"name":"SpriteFish","path":"sprites/SpriteFish/SpriteFish.yy",},},
     {"id":{"name":"SpriteScan","path":"sprites/SpriteScan/SpriteScan.yy",},},
