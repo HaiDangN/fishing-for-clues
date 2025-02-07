@@ -32,29 +32,28 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	draw_set_alpha(1);
 	return sprite;
 }
-
-ZoneSprite = draw_lake(0, 0, radius * 1, c_white, 1, slice_count);
-
-// Clean up the surface after creating the sprite
-
-
-
-var slice_list = [];
-
-object_set_sprite(Zone, ZoneSprite);
-for (var i = 0; i < slice_count; i++)
-{   
-	var slice = instance_create_layer(x, y, "Instances", Zone);
+if (array_length(zone_list) == 0) {
 	
-	slice.sprite_index = ZoneSprite
-    slice.image_angle = ((-i * 360) / slice_count);
-	var text_x = x + lengthdir_x(radius * 2.75, 90 + slice.image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
-	var text_y = y + lengthdir_y(radius * 2.75, 90 + slice.image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle)
-	draw_text_transformed_color(text_x, text_y, i + 1, 3, 3, 0, c_black, c_black, c_black, c_black, 1);
+	ZoneSprite = draw_lake(0, 0, radius * 1, c_white, 1, slice_count);
+
+	// Clean up the surface after creating the sprite
+
+
+
 	
-	slice.image_xscale *= 2;
-	slice.image_yscale *= 2;
-    slice_list[i] = slice;
+
+	object_set_sprite(Zone, ZoneSprite);
+	for (var i = 0; i < slice_count; i++)
+	{   
+		var slice = instance_create_layer(x, y, "Instances", Zone);
+	
+		slice.sprite_index = ZoneSprite
+	    slice.image_angle = ((-i * 360) / slice_count);
+		slice.zoneId = i + 1;
+		slice.radius = radius;
+		slice.slice_count = slice_count
+		slice.image_xscale *= 2;
+		slice.image_yscale *= 2;
+	    zone_list[i] = slice;
+	}
 }
