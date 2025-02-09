@@ -53,6 +53,7 @@
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"FishEnums","path":"scripts/FishEnums/FishEnums.yy",},},
+    {"id":{"name":"StateEnums","path":"scripts/StateEnums/StateEnums.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
     {"id":{"name":"defaultBackground","path":"sprites/defaultBackground/defaultBackground.yy",},},
     {"id":{"name":"SpriteAnglerFish","path":"sprites/SpriteAnglerFish/SpriteAnglerFish.yy",},},
