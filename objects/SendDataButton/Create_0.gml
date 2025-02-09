@@ -1,0 +1,2 @@
+defaultSprite = SpriteSendData;
+hoverSprite = SpriteFish;

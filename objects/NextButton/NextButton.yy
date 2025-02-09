@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"ButtonGoFish",
+  "%Name":"NextButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ButtonGoFish",
+  "name":"NextButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"AbilityButtons",
-    "path":"folders/Objects/AbilityButtons.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SpriteFish",
-    "path":"sprites/SpriteFish/SpriteFish.yy",
+    "name":"SpriteNextButton",
+    "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

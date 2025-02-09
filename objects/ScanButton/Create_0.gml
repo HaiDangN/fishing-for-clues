@@ -1,0 +1,2 @@
+defaultSprite = SpriteScan;
+hoverSprite = SpriteFish;

@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"ButtonScan",
+  "%Name":"AbilityButtonScript",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ButtonScan",
+  "name":"AbilityButtonScript",
   "overriddenProperties":[],
   "parent":{
-    "name":"AbilityButtons",
-    "path":"folders/Objects/AbilityButtons.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"SpriteScan",
-    "path":"sprites/SpriteScan/SpriteScan.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
