@@ -17,8 +17,26 @@ if mouse_check_button(mb_left) {
 }
 
 // Action:
-if mouse_check_button_released(mb_left) {
-	if position_meeting(mouse_x, mouse_y, id) {
-		event_user(0);
-	}
+if (mouse_check_button_pressed(mb_left)) {
+    // Ensure the mouse is over the button before changing the background
+    if (position_meeting(mouse_x, mouse_y, id)) {
+
+		// Check if background1 is visible
+		if (layer_get_visible("background")) {
+		    layer_set_visible("background", false);
+		    layer_set_visible("Tutorial1", true);
+			
+		} else if (layer_get_visible("tutorial1")) {
+			layer_set_visible("Tutorial1", false);
+		    layer_set_visible("Tutorial3", true);
+			
+		} else if (layer_get_visible("tutorial3")) {
+			layer_set_visible("Tutorial3", false);
+		    layer_set_visible("Tutorial4", true);
+		} else {
+			
+			layer_set_visible("background", true);	
+		}
+
+    }
 }

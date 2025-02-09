@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"AbilityIcons",
+    "path":"folders/Sprites/AbilityIcons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

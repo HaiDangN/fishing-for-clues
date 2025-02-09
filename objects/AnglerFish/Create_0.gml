@@ -1,0 +1,1 @@
+global.selecting_fish = false;

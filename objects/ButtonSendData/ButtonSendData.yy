@@ -9,8 +9,8 @@
   "name":"ButtonSendData",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"AbilityButtons",
+    "path":"folders/Objects/AbilityButtons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
