@@ -26,3 +26,23 @@ function fishIdToString(fishId) {
 	
 	}
 }
+
+function fishIdToIcon(fishId) {
+	switch(fishId) {
+		case FishId.Anglerfish:
+			return SpriteAnglerFish;
+		case FishId.RedHerring:
+			return SpriteRedHerring;
+		case FishId.Clownfish:
+			return SpriteClownFish;
+		case FishId.Primefish:
+			return SpritePrimeFish;
+		case FishId.Goldfish:
+			return SpriteGoldFish;
+		case FishId.Empty:
+			return SpriteTrulyEmptyZone;
+		default:
+			return SpriteNextButton; // This is the wrong case and if you see Kevin somewhere, it means something wrong with the given FishId
+	
+	}
+}
