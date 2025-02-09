@@ -52,6 +52,7 @@
     {"id":{"name":"SendDataButton","path":"objects/SendDataButton/SendDataButton.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"FishEnums","path":"scripts/FishEnums/FishEnums.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
     {"id":{"name":"defaultBackground","path":"sprites/defaultBackground/defaultBackground.yy",},},
     {"id":{"name":"SpriteAnglerFish","path":"sprites/SpriteAnglerFish/SpriteAnglerFish.yy",},},
@@ -64,6 +65,7 @@
     {"id":{"name":"SpriteRedHerring","path":"sprites/SpriteRedHerring/SpriteRedHerring.yy",},},
     {"id":{"name":"SpriteScan","path":"sprites/SpriteScan/SpriteScan.yy",},},
     {"id":{"name":"SpriteSendData","path":"sprites/SpriteSendData/SpriteSendData.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"SpriteTrulyEmptyZone","path":"sprites/SpriteTrulyEmptyZone/SpriteTrulyEmptyZone.yy",},},
     {"id":{"name":"Tutorial1","path":"sprites/Tutorial1/Tutorial1.yy",},},
     {"id":{"name":"Tutorial2","path":"sprites/Tutorial2/Tutorial2.yy",},},
@@ -75,6 +77,8 @@
     {"id":{"name":"Tutorial8","path":"sprites/Tutorial8/Tutorial8.yy",},},
     {"id":{"name":"Tutorial9","path":"sprites/Tutorial9/Tutorial9.yy",},},
     {"id":{"name":"ZoneImg","path":"sprites/ZoneImg/ZoneImg.yy",},},
+=======
+>>>>>>> Stashed changes
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

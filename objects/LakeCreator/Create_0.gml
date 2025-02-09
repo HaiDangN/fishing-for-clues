@@ -1,1 +1,1 @@
-zone_list = [];
+global.zone_list = [];

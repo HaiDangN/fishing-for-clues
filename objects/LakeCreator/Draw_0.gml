@@ -32,7 +32,7 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	draw_set_alpha(1);
 	return sprite;
 }
-if (array_length(zone_list) == 0) {
+if (array_length(global.zone_list) == 0) {
 	
 	ZoneSprite = draw_lake(0, 0, radius * 1, c_white, 1, slice_count);
 
@@ -54,6 +54,7 @@ if (array_length(zone_list) == 0) {
 		slice.slice_count = slice_count
 		slice.image_xscale *= 2;
 		slice.image_yscale *= 2;
-	    zone_list[i] = slice;
+	    global.zone_list[i] = slice;
+		//show_debug_message(global.level_1[i]);
 	}
 }
