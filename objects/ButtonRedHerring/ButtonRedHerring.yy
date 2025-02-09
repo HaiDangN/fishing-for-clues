@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"SelectRedHerring",
+  "%Name":"ButtonRedHerring",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"SelectRedHerring",
+  "name":"ButtonRedHerring",
   "overriddenProperties":[],
   "parent":{
     "name":"SelectButtons",
     "path":"folders/Objects/SelectButtons.yy",
   },
   "parentObjectId":{
-    "name":"SelectAnglerfish",
-    "path":"objects/SelectAnglerfish/SelectAnglerfish.yy",
+    "name":"ButtonAnglerfish",
+    "path":"objects/ButtonAnglerfish/ButtonAnglerfish.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SelectSpriteRedHerring",
-    "path":"sprites/SelectSpriteRedHerring/SelectSpriteRedHerring.yy",
+    "name":"SpriteRedHerring",
+    "path":"sprites/SpriteRedHerring/SpriteRedHerring.yy",
   },
   "spriteMaskId":null,
   "visible":true,
