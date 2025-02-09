@@ -1,2 +1,0 @@
-defaultSprite = SpriteFindAngler;
-hoverSprite = SpriteFish;

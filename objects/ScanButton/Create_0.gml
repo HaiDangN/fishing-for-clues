@@ -1,2 +1,0 @@
-defaultSprite = SpriteScan;
-hoverSprite = SpriteFish;

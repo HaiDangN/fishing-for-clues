@@ -1,2 +1,0 @@
-defaultSprite = SpriteSendData;
-hoverSprite = SpriteFish;
