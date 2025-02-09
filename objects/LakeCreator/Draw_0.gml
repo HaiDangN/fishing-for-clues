@@ -37,8 +37,8 @@ if (array_length(global.zone_list) == 0) {
 	ZoneSprite = draw_lake(0, 0, radius * 1, c_white, 1, slice_count);
 
 	// Clean up the surface after creating the sprite
-
-
+	slice_count = array_length(global.fish_list);
+	global.zone_highlight = array_create(slice_count, false);
 
 	
 

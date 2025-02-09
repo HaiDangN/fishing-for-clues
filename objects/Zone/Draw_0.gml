@@ -6,7 +6,11 @@ draw_self();
 //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true); // displays collision
 
 shader_reset();
-
+if (global.zone_highlight[zoneId - 1]) {
+	image_blend = c_green;
+} else {
+	image_blend = c_white;
+}
 var text_x = x + lengthdir_x(radius * 2.75, 90 + image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
 var text_y = y + lengthdir_y(radius * 2.75, 90 + image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
 draw_set_halign(fa_center);
