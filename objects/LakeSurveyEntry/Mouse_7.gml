@@ -12,6 +12,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 	//transition to picking zone
 	if (fishId != FishId.Empty and fishId != FishId.Anglerfish) {
 		global.state = STATES.SCAN_PICK_ZONE;
+		global.fishSelected = fishId;
 	} else {
 		show_message("Please pick something that is not empty or Anglerfish");
 	}

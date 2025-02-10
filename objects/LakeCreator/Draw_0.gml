@@ -57,4 +57,5 @@ if (array_length(global.zone_list) == 0) {
 	    global.zone_list[i] = slice;
 		//show_debug_message(global.level_1[i]);
 	}
+	
 }
