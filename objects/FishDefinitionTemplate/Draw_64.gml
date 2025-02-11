@@ -1,7 +1,7 @@
 x = mouse_x
 y = mouse_y
-draw_self();
 
+show_debug_message(id);
 
 draw_text_transformed(x + sprite_width/2, y - 4*sprite_height/5, fishIdToString(fishId), 2, 2, 0);
 

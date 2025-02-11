@@ -59,6 +59,7 @@ if (mouse_check_button_pressed(mb_left)) {
 				x = 691;
 				y = 641;
 				visible = true;
+				global.zone_list[0].show_fish = true;
 			}
 			
 			
