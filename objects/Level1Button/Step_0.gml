@@ -10,10 +10,7 @@ var tutorialLayers = [
     "Tutorial8",
     "Tutorial9"
 ];
-var tutorial2InstanceLayer = "Tutorial2Objects";
-var tutorial3InstanceLayer = "Tutorial3Objects";
-var tutorial5InstanceLayer = "LakeSurveyEntries";
-var tutorial7InstanceLayer = "Tutorial7Objects";
+
 // Initialize the global variable if it doesn’t exist
 if (!variable_global_exists("Tstep")) {
     global.Tstep = 0; 
@@ -45,29 +42,6 @@ if (mouse_check_button_pressed(mb_left)) {
 				layer_set_visible("LakeSurveyEntries", false);
 			} else {
 				layer_set_visible("LakeSurveyEntries", true);
-			}
-			            // ✅ Show the instance layer only when on "Tutorial2"
-            if (global.Tstep == 1) { // 1 because Tutorial2 is at index 1
-                layer_set_visible(tutorial2InstanceLayer, true);
-            } 
-            if (global.Tstep == 2) {
-				x = 146; // New X position
-				y = 850; // New Y position
-				layer_set_visible(tutorial3InstanceLayer, true);
-            } else {
-				x = 695; // New X position
-				y = 601; // New Y position
-			}
-            if (global.Tstep == 5) {
-				layer_set_visible(tutorial5InstanceLayer, true);
-            } 
-            if (global.Tstep == 7) {
-				x = 695; // New X position
-				y = 850; // New Y position
-				layer_set_visible(tutorial7InstanceLayer, true);
-            } else {
-				x = 695; // New X position
-				y = 601; // New Y position
 			}
         }
     }
