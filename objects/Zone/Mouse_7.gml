@@ -14,7 +14,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		show_fish = true;
 	}
     global.state = STATES.FREE;
-	global.hours -= 2;
+	//global.hours -= 2;
 }
 
 // Scan Button
@@ -33,7 +33,7 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 	// Result of the scan.
 	show_debug_message("There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan));
 	global.state = STATES.FREE;
-	global.hours -= 2;
+	//global.hours -= 2;
 }
 
 // Send Data button
@@ -50,10 +50,10 @@ if (global.state == STATES.DATA_PICK_ZONE) {
     if (actualFish == guessedFish) {
         show_debug_message("You are correct!");
 		show_fish = true;
-		global.hours += 1; 
+		//global.hours += 1; 
     } else {
         show_debug_message("Incorrect.");
-		global.hours -= 1; 
+		//global.hours -= 1; 
     }
 
     global.state = STATES.FREE; // Reset game state
@@ -72,17 +72,20 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
     }
             
     global.state = STATES.FREE;
-	global.hours -= 4;
+	//global.hours -= 4;
 }
 
 // Win condition
 if (global.hours >= 0 and global.anglerfishFound == true) {
-	show_message("Congrats you found the Angler fish with " + string(global.hours) + " hours remaining!");
+	show_message("Congrats you found the Angler fish!");
+	// with " + string(global.hours) + " hours remaining!");
 }
 
 // Game over conditions.
 // Implement 1x use Anglerfish later
+/*
 if (global.hours <= 0) {
 	show_message("Game Over, you lost");
 	game_restart();
 }
+*/

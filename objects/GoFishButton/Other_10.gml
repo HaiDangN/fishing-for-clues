@@ -1,4 +1,4 @@
-show_message("Go Fish Button");
+show_message("Select a Zone!");
 
 if (global.state == STATES.FREE) {
     global.state = STATES.FISH_PICK_ZONE;

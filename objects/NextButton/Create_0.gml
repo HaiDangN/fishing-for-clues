@@ -1,3 +1,2 @@
 label = "";
-hoverSprite = SpriteFindAngler;
-defaultSprite = SpriteFish;
+layer_set_visible("LakeSurveyEntries", false);

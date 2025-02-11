@@ -1,4 +1,4 @@
-show_message("Found Angler Button");
+show_message("Can you find me?");
 
 if (global.state == STATES.FREE) {
 	global.state = STATES.ANGLERFISH_PICK_ZONE;

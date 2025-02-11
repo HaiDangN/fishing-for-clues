@@ -1,6 +1,5 @@
 // An array that tracks the background layers
 var tutorialLayers = [
-    "background",
     "Tutorial1",
 	"Tutorial2",
     "Tutorial3",
@@ -9,7 +8,8 @@ var tutorialLayers = [
     "Tutorial6",
     "Tutorial7",
     "Tutorial8",
-    "Tutorial9"
+    "Tutorial9",
+	"background"
 ];
 
 // Initialize the global variable if it doesn’t exist
@@ -37,10 +37,50 @@ if (mouse_check_button_pressed(mb_left)) {
         // Ensure the new layer exists before making it visible
         if (layer_exists(nextLayer)) {
             layer_set_visible(nextLayer, true);
-			if (global.Tstep != 0 and global.Tstep != 6) {
-				layer_set_visible("LakeSurveyEntries", false);
+			
+			// Turn on Gofish visibility
+			if (global.Tstep == 2) {
+				x = 64; // New X position
+				y = 832; // New Y position
+				image_xscale = 1.3;
+				image_yscale = 1.3;
+				GoFishButton.visible = true;
+			}
+			
+			if (global.Tstep == 3) {
+				x = 1300; // New X position
+				y = 250; // New Y position
+				visible = false;
+				image_xscale = 1;
+				image_yscale = 1;
+			}
+			
+			if (global.Tstep == 4) {
+				x = 691;
+				y = 641;
+				visible = true;
+			}
+			
+			
+			if (global.Tstep == 5 || global.Tstep == 9) {
+			    layer_set_visible("LakeSurveyEntries", true);
 			} else {
-				layer_set_visible("LakeSurveyEntries", true);
+			    layer_set_visible("LakeSurveyEntries", false);
+			}
+			
+			if (global.Tstep == 7) {
+				x = 736;
+				y = 832;
+				FindAnglerButton.visible = true;
+			}
+			
+			if (global.Tstep == 8) {
+				x = 691;
+				y = 641;
+			}
+			
+			if (global.Tstep == 9) {
+				visible = false;	
 			}
         }
     }
