@@ -18,6 +18,7 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 
 // If user clicks on fish button
 if (global.state == STATES.FISH_PICK_ZONE) {
+	
     var fishFound = global.fish_list[zoneId - 1]; // Get the fish in the selected zone
 	if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
 		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");	
@@ -40,4 +41,23 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
             
     global.state = STATES.FREE;
 	global.hours -= 4;
+}
+
+// if user clicks on Send Data button
+if (global.state == STATES.DATA_PICK_ZONE) {
+	var actualFish = global.fish_list[zoneId - 1]; // Get the fish in this zone
+	
+	global.state = STATES.DATA_PICK_FISH;
+    var guessedFish = global.fishSelected; // The fish the player guessed
+    
+    if (actualFish == guessedFish) {
+        show_message("You are correct!");
+		global.hours += 1; 
+		show_fish = true;
+    } else {
+        show_message("Incorrect.");
+		global.hours -= 1; 
+    }
+
+    global.state = STATES.FREE; // Reset game state
 }
