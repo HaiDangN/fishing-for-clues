@@ -48,18 +48,23 @@ if (mouse_check_button_pressed(mb_left)) {
 			}
 			
 			if (global.Tstep == 3) {
-				x = 1300; // New X position
-				y = 250; // New Y position
+				x = 1280; // New X position
+				y = 384 - sprite_get_height(global.zone_sprite); // New Y position
 				visible = false;
-				image_xscale = 1;
-				image_yscale = 1;
+				
+				image_xscale = sprite_get_width(global.zone_sprite)/sprite_width
+				image_yscale = sprite_get_height(global.zone_sprite)/sprite_height;
+				
 			}
 			
 			if (global.Tstep == 4) {
 				x = 691;
 				y = 641;
 				visible = true;
+				image_xscale = 1;
+				image_yscale = 1;
 				global.zone_list[0].show_fish = true;
+				global.state = STATES.FREE; // JUST incase they hit the corner that is outside the zone
 			}
 			
 			
