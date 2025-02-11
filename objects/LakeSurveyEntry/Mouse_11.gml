@@ -3,3 +3,4 @@ if (global.state == STATES.SCAN_PICK_FISH or global.state == STATES.DATA_PICK_FI
 } else{
 	mask_index.image_blend = c_white;
 }
+instance_destroy(definitionCardInstance);

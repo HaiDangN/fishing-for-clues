@@ -37,6 +37,11 @@ if (mouse_check_button_pressed(mb_left)) {
         // Ensure the new layer exists before making it visible
         if (layer_exists(nextLayer)) {
             layer_set_visible(nextLayer, true);
+			if (global.Tstep != 0 and global.Tstep != 6) {
+				layer_set_visible("LakeSurveyEntries", false);
+			} else {
+				layer_set_visible("LakeSurveyEntries", true);
+			}
         }
     }
 }

@@ -35,7 +35,7 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 if (array_length(global.zone_list) == 0) {
 	
 	ZoneSprite = draw_lake(0, 0, radius * 1, c_white, 1, slice_count);
-
+	global.zone_sprite = ZoneSprite;
 	// Clean up the surface after creating the sprite
 	slice_count = array_length(global.fish_list);
 	global.zone_highlight = array_create(slice_count, false);
@@ -54,6 +54,7 @@ if (array_length(global.zone_list) == 0) {
 		slice.slice_count = slice_count
 		slice.image_xscale *= 2;
 		slice.image_yscale *= 2;
+		slice.fishId = global.fish_list[i];
 	    global.zone_list[i] = slice;
 		//show_debug_message(global.level_1[i]);
 	}

@@ -13,7 +13,11 @@ if (sprite_index != noone) {
 } 
 if (sprite_w != 0) {
 	draw_set_valign(fa_middle);
-	draw_set_color(c_black)
+	draw_set_halign(fa_center);
+	draw_set_color(c_black);
+	
+	// debug line 
+	//draw_line(x + sprite_w + padding, y + sprite_get_height(mask_index)/2, x + sprite_w + padding*4, y + sprite_get_height(mask_index)/2);
 	draw_text_transformed(x + sprite_w + padding * 4, y + sprite_get_height(mask_index)/2, label, 3, 3, 0);
 }
 // Draw the text to the right of the sprite
