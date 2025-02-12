@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"SendDataButton",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"AbilityButtonScript","path":"objects/AbilityButtonScript/AbilityButtonScript.yy",},"propertyId":{"name":"action","path":"objects/AbilityButtonScript/AbilityButtonScript.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Send Data",},
+  ],
   "parent":{
     "name":"AbilityButtons",
     "path":"folders/Objects/AbilityButtons.yy",

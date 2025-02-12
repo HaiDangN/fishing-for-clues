@@ -1,1 +1,3 @@
 visible = false;
+
+definitionInstance = noone;

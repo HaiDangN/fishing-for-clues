@@ -41,6 +41,7 @@
   "resources":[
     {"id":{"name":"FontToBeReplaced","path":"fonts/FontToBeReplaced/FontToBeReplaced.yy",},},
     {"id":{"name":"AbilityButtonScript","path":"objects/AbilityButtonScript/AbilityButtonScript.yy",},},
+    {"id":{"name":"AbilityDefinitionTemplate","path":"objects/AbilityDefinitionTemplate/AbilityDefinitionTemplate.yy",},},
     {"id":{"name":"ButtonAnglerfish","path":"objects/ButtonAnglerfish/ButtonAnglerfish.yy",},},
     {"id":{"name":"ButtonRedHerring","path":"objects/ButtonRedHerring/ButtonRedHerring.yy",},},
     {"id":{"name":"FindAnglerButton","path":"objects/FindAnglerButton/FindAnglerButton.yy",},},
@@ -92,9 +93,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
   ],
   "templateType":"game",
