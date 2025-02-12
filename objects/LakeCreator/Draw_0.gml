@@ -60,3 +60,10 @@ if (array_length(global.zone_list) == 0) {
 	}
 	
 }
+
+if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZONE or global.state == STATES.ANGLERFISH_PICK_ZONE or global.state ==STATES.DATA_PICK_ZONE) {
+	blink += 0.1
+	draw_set_alpha(0.5*sin(blink));
+	draw_circle_color(x, y, radius*2 + 10, c_green, c_green, false);
+	draw_set_alpha(1);
+}
