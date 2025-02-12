@@ -77,6 +77,7 @@
     {"id":{"name":"SpriteSendData","path":"sprites/SpriteSendData/SpriteSendData.yy",},},
     {"id":{"name":"SpriteStartButton","path":"sprites/SpriteStartButton/SpriteStartButton.yy",},},
     {"id":{"name":"SpriteTrulyEmptyZone","path":"sprites/SpriteTrulyEmptyZone/SpriteTrulyEmptyZone.yy",},},
+    {"id":{"name":"TEMPBOX","path":"sprites/TEMPBOX/TEMPBOX.yy",},},
     {"id":{"name":"Tutorial1","path":"sprites/Tutorial1/Tutorial1.yy",},},
     {"id":{"name":"Tutorial2","path":"sprites/Tutorial2/Tutorial2.yy",},},
     {"id":{"name":"Tutorial3","path":"sprites/Tutorial3/Tutorial3.yy",},},
@@ -87,8 +88,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
   ],
