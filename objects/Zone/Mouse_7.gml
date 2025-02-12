@@ -8,7 +8,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 	// If the found fish is an Anglerfish or if the zone is empty
 	// the player finds nothing.
 	if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
-		show_debug_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");	
+		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");	
 	} else {
 		show_debug_message("You found " + fishIdToString(fishFound) + " in this zone!");
 		show_fish = true;
