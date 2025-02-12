@@ -1,6 +1,4 @@
 draw_self();
-draw_set_color(c_black);
-draw_set_font(FontToBeReplaced);
 
 // Set to the top right
 draw_set_halign(fa_right);

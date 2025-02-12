@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SpriteNextButton",
+    "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
+  },
   "spriteMaskId":{
     "name":"SpriteNextButton",
     "path":"sprites/SpriteNextButton/SpriteNextButton.yy",

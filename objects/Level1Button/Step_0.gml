@@ -56,8 +56,8 @@ if (mouse_check_button_pressed(mb_left)) {
 				
 				// Sprite fits zone so when player selects a zone
 				// sprite will go to the next tutorial step.
-				image_xscale = sprite_get_width(global.zone_sprite);
-				image_yscale = sprite_get_height(global.zone_sprite);
+				image_xscale = sprite_get_width(global.zone_sprite) / 2;
+				image_yscale = sprite_get_height(global.zone_sprite) / 2;
 			}
 			
 			if (global.Tstep == 4) {

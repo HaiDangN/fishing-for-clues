@@ -1,3 +1,6 @@
+draw_set_color(c_black);
+draw_set_font(FontToBeReplaced);
+
 x = mouse_x
 y = mouse_y
 

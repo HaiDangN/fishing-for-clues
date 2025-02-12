@@ -1,3 +1,6 @@
+draw_set_color(c_black);
+draw_set_font(FontToBeReplaced);
+
 // Set the horizontal padding between the sprite and the text
 var padding = 50; 
 var vpadding = 0;
