@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"NextButton",
+  "%Name":"Level1Button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"NextButton",
+  "name":"Level1Button",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
+  "spriteId":null,
+  "spriteMaskId":{
     "name":"SpriteNextButton",
     "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }

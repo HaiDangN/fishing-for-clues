@@ -1,1 +1,2 @@
 definitionCardInstance = noone;
+visible = false;

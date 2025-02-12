@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"FindAnglerButton",
+  "%Name":"TempGoToRoom2Button",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"FindAnglerButton",
+  "name":"TempGoToRoom2Button",
   "overriddenProperties":[],
   "parent":{
-    "name":"AbilityButtons",
-    "path":"folders/Objects/AbilityButtons.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"AbilityButtonScript",
-    "path":"objects/AbilityButtonScript/AbilityButtonScript.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SpriteFindAngler",
-    "path":"sprites/SpriteFindAngler/SpriteFindAngler.yy",
+    "name":"Room2",
+    "path":"sprites/Room2/Room2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

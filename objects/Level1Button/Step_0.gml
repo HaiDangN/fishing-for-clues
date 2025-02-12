@@ -47,17 +47,21 @@ if (mouse_check_button_pressed(mb_left)) {
 				GoFishButton.visible = true;
 			}
 			
+			// Slice
 			if (global.Tstep == 3) {
 				x = 1280; // New X position
-				y = 384 - sprite_get_height(global.zone_sprite); // New Y position
-				visible = false;
+				image_angle = 90;
+				y = 600 - sprite_get_height(global.zone_sprite); // New Y position
+				visible = true; // change to false after
 				
-				image_xscale = sprite_get_width(global.zone_sprite)/sprite_width
-				image_yscale = sprite_get_height(global.zone_sprite)/sprite_height;
-				
+				// Sprite fits zone so when player selects a zone
+				// sprite will go to the next tutorial step.
+				image_xscale = sprite_get_width(global.zone_sprite);
+				image_yscale = sprite_get_height(global.zone_sprite);
 			}
 			
 			if (global.Tstep == 4) {
+				image_angle = 0;
 				x = 691;
 				y = 641;
 				visible = true;
@@ -69,8 +73,10 @@ if (mouse_check_button_pressed(mb_left)) {
 			
 			
 			if (global.Tstep == 5 || global.Tstep == 9) {
-			    layer_set_visible("LakeSurveyEntries", true);
+			    LakeSurveyEntry.visible = true;
+				layer_set_visible("LakeSurveyEntries", true);
 			} else {
+				LakeSurveyEntry.visible = false;
 			    layer_set_visible("LakeSurveyEntries", false);
 			}
 			
@@ -86,7 +92,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			}
 			
 			if (global.Tstep == 9) {
-				visible = false;	
+				visible = false;
 			}
         }
     }

@@ -76,7 +76,7 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 }
 
 // Win condition
-if (global.hours >= 0 and global.anglerfishFound == true) {
+if (global.anglerfishFound == true) {
 	show_message("Congrats you found the Angler fish!");
 	// with " + string(global.hours) + " hours remaining!");
 }
