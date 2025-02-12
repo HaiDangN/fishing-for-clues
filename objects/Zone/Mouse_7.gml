@@ -31,6 +31,7 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 	}
 	
 	// Result of the scan.
+	global.fishSelected = -1;
 	show_debug_message("There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan));
 	global.state = STATES.FREE;
 	//global.hours -= 2;
@@ -55,7 +56,7 @@ if (global.state == STATES.DATA_PICK_ZONE) {
         show_debug_message("Incorrect.");
 		//global.hours -= 1; 
     }
-
+	global.fishSelected = -1;
     global.state = STATES.FREE; // Reset game state
 }
 

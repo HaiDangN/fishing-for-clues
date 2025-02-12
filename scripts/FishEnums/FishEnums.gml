@@ -46,3 +46,8 @@ function fishIdToIcon(fishId) {
 	
 	}
 }
+
+function isFishSelectable(fishId) {
+	return fishId != FishId.Anglerfish and fishId != FishId.Empty;	
+}
+global.fishSelected = -1;

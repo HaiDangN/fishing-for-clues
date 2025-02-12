@@ -1,6 +1,6 @@
-global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty]
+global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty, FishId.Primefish, FishId.Clownfish, FishId.Clownfish, FishId.Goldfish, FishId.Primefish, FishId.Goldfish, FishId.Clownfish, FishId.Clownfish]
 global.state = STATES.FREE;
-
+global.fishSelected = -1;
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {
@@ -26,6 +26,7 @@ while (key != undefined) {
 	lakeSurveyEntry.sprite_index = fishIdToIcon(key);
 	lakeSurveyEntry.label = fishIdToString(key) + ": x" + string(value);
 	lakeSurveyEntry.fishId = key;
+	lakeSurveyEntry.visible = true;
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
 }

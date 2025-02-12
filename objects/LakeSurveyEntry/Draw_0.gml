@@ -1,6 +1,26 @@
 draw_set_color(c_black);
 draw_set_font(FontToBeReplaced);
 
+
+// handles highlights
+blink += 0.09
+if ((isStatePickingFish() and isFishSelectable(fishId)) or fishId == global.fishSelected) {
+	if (isStatePickingFish()) {
+		
+		// pulses if fish is selectable
+		draw_set_alpha(0.3*sin(blink))
+		if (position_meeting(mouse_x, mouse_y, self)) {
+			// when hovered over, make it steady 
+			draw_set_alpha(0.5);
+		}
+	}
+	// this means that this fish was selected so we can have a solid background 
+	else {draw_set_alpha(1)}
+	draw_rectangle_color(x + 50, y, x + sprite_get_width(mask_index)-50, y + sprite_get_height(mask_index), c_green, c_green, c_green, c_green, false);
+	draw_set_alpha(1);
+}
+
+
 // Set the horizontal padding between the sprite and the text
 var padding = 50; 
 var vpadding = 0;

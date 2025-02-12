@@ -7,3 +7,7 @@ enum STATES {
 	DATA_PICK_ZONE,
 	ANGLERFISH_PICK_ZONE
 }
+
+function isStatePickingFish() {
+	return global.state == STATES.DATA_PICK_FISH or global.state == STATES.SCAN_PICK_FISH;	
+}
