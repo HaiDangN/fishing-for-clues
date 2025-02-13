@@ -166,6 +166,7 @@ if (global.win == true) {
 if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
 	if (global.hours <= 0) {
 		global.lose = true;
+		instance_activate_object(RestartButton);
 		layer_set_visible("Gameover", true);
 		instance_deactivate_layer("LakeSurveyEntries");
 		instance_deactivate_object(FindAnglerButton);

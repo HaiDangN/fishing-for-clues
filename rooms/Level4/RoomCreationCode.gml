@@ -1,8 +1,8 @@
 global.fish_list = [
 	FishId.Anglerfish,
 	FishId.Primefish,
-	FishId.Clownfish,
-	FishId.Clownfish,
+	FishId.RedHerring,
+	FishId.Empty,
 	FishId.Primefish,
 	FishId.RedHerring,
 	FishId.Clownfish,
@@ -61,3 +61,4 @@ LakeSurveyEntry.visible = true;
 LakeCreator.visible = true;
 layer_set_visible("LakeSurveyEntries", true);
 
+instance_deactivate_object(RestartButton);

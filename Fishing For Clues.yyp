@@ -52,6 +52,7 @@
     {"id":{"name":"Level1Button","path":"objects/Level1Button/Level1Button.yy",},},
     {"id":{"name":"Level2Button","path":"objects/Level2Button/Level2Button.yy",},},
     {"id":{"name":"Level3Button","path":"objects/Level3Button/Level3Button.yy",},},
+    {"id":{"name":"RestartButton","path":"objects/RestartButton/RestartButton.yy",},},
     {"id":{"name":"ScanButton","path":"objects/ScanButton/ScanButton.yy",},},
     {"id":{"name":"SendDataButton","path":"objects/SendDataButton/SendDataButton.yy",},},
     {"id":{"name":"StartButton","path":"objects/StartButton/StartButton.yy",},},
