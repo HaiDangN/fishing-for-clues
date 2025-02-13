@@ -7,9 +7,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
     var fishFound = global.fish_list[zoneId - 1];
 	
 	// Check if player selected the same fish
-	if (global.zone_list[zoneId-1].show_fish) {
-		show_message("you alrady found this fish!");	
-	} else {
+	if (!global.zone_list[zoneId -1].show_fish) {
 		// If the found fish is an Anglerfish or if the zone is empty
 		// the player finds nothing.
 		if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
@@ -50,10 +48,9 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
 			global.hours -= 2;	
 		}
+	} else {
+		show_message("That zone is already revealed!");	
 	}
-	
-	
-	
 }
 
 // Scan Button
@@ -119,27 +116,30 @@ if (global.state == STATES.DATA_PICK_ZONE) {
 
 // Anglerfish button
 if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
-	
-	// Check if user guessed Anglerfish correctly.
-    if (global.fish_list[zoneId - 1] == FishId.Anglerfish) {
-        show_debug_message("Found Angler");
-		show_fish = true;
-		global.win = true;
+	if (!global.zone_list[zoneId -1].show_fish) {
+		// Check if user guessed Anglerfish correctly.
+	    if (global.fish_list[zoneId - 1] == FishId.Anglerfish) {
+	        show_debug_message("Found Angler");
+			show_fish = true;
+			global.win = true;
 		
-    } else {
+	    } else {
 		
-        show_debug_message(zoneId);
-		layer_set_visible("Gameover", true);
-		instance_deactivate_layer("LakeSurveyEntries");
-		instance_deactivate_object(FindAnglerButton);
-		instance_deactivate_object(GoFishButton);
-		instance_deactivate_object(ScanButton);
-		instance_deactivate_object(SendDataButton);
+	        show_debug_message(zoneId);
+			layer_set_visible("Gameover", true);
+			instance_deactivate_layer("LakeSurveyEntries");
+			instance_deactivate_object(FindAnglerButton);
+			instance_deactivate_object(GoFishButton);
+			instance_deactivate_object(ScanButton);
+			instance_deactivate_object(SendDataButton);
 		
 		
-		global.lose = true;
-    }
-    global.state = STATES.FREE;
+			global.lose = true;
+	    }
+	    global.state = STATES.FREE;
+	} else {
+		show_message("That zone is already revealed!");
+	}
 }
 
 // Win condition

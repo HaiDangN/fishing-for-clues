@@ -1,1 +1,1 @@
-//room_goto(Level3);
+room_goto(Level4);
