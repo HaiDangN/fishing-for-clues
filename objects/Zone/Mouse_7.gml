@@ -10,10 +10,39 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 	if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
 		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");	
 	} else {
-		show_debug_message("You found " + fishIdToString(fishFound) + " in this zone!");
+		show_message("You found " + fishIdToString(fishFound) + " in this zone!");
 		show_fish = true;
 	}
     global.state = STATES.FREE;
+	
+	// Tutorial2 part 2
+	// LEVEL 1 SPECIFIC for tutorial
+	// Have player select a zone
+	// IF zone 1 --> Display Next Page
+	// IF any other zone --> Display keep fishing page
+	if (global.Tstep == 3 and global.IsTutorial1 == true) {
+		
+		if (global.zone_list[0].show_fish == true) {
+			// Increment step so they are not stuck.
+			global.Tstep += 1;
+			layer_set_visible("Tutorial2", false);
+			
+			// Tutorial4 Introduce Flash Cards
+			layer_set_visible("Tutorial3Next", true);
+			layer_set_visible("LakeSurveyEntries", true);
+			LakeSurveyEntry.visible = true;
+		} else {
+			layer_set_visible("Tutorial2", false);
+			
+			// Tutorial4 Introduce Flash Cards
+			layer_set_visible("Tutorial3", true);
+			layer_set_visible("LakeSurveyEntries", true);
+			LakeSurveyEntry.visible = true;
+		}
+	}
+	
+	// IF NOT TUTORIAL1 AND NOT TUTORIAL2
+	// THEN SUBTRACT THESE HOURS YO
 	//global.hours -= 2;
 }
 
@@ -67,9 +96,13 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
     if (global.fish_list[zoneId - 1] == FishId.Anglerfish) {
         show_debug_message("Found Angler");
 		show_fish = true;
-		global.anglerfishFound = true;
+		global.win = true;
+		
     } else {
+		
         show_debug_message(zoneId);
+		layer_set_visible("Gameover", true);
+		global.lose = true;
     }
             
     global.state = STATES.FREE;
@@ -77,8 +110,13 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 }
 
 // Win condition
-if (global.anglerfishFound == true) {
-	show_message("Congrats you found the Angler fish!");
+if (global.win == true) {
+	
+	layer_set_visible("Victory", true);
+	
+	if (global.IsTutorial1 == true) {
+		show_message("Click on the next level button to go to the next level.");	
+	}
 	// with " + string(global.hours) + " hours remaining!");
 }
 

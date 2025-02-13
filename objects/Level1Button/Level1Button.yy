@@ -12,8 +12,8 @@
   "name":"Level1Button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"TEMPBOX",
-    "path":"sprites/TEMPBOX/TEMPBOX.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":{
     "name":"TEMPBOX",
     "path":"sprites/TEMPBOX/TEMPBOX.yy",

@@ -12,7 +12,7 @@
   ],
   "parent":{
     "name":"AbilityButtons",
-    "path":"folders/Objects/AbilityButtons.yy",
+    "path":"folders/Objects/Buttons/AbilityButtons.yy",
   },
   "parentObjectId":{
     "name":"AbilityButtonScript",
