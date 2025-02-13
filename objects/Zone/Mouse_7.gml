@@ -2,16 +2,23 @@ show_debug_message("Clicked on zone " + string_format(zoneId, 0, 0) + " which co
 
 // Fish Button
 if (global.state == STATES.FISH_PICK_ZONE) {
+
 	// Get the fish in the selected zone
     var fishFound = global.fish_list[zoneId - 1];
+	
+	// Check if player selected the same fish
+	if (global.zone_list[zoneId-1]) {
+		show_message("you alrady found this fish!");	
+	}
+	
 	
 	// If the found fish is an Anglerfish or if the zone is empty
 	// the player finds nothing.
 	if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
-		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");	
+		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");
 	} else {
 		show_message("You found " + fishIdToString(fishFound) + " in this zone!");
-		show_fish = true;
+		show_fish = true;	
 	}
     global.state = STATES.FREE;
 	
@@ -41,9 +48,10 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		}
 	}
 	
-	// IF NOT TUTORIAL1 AND NOT TUTORIAL2
-	// THEN SUBTRACT THESE HOURS YO
-	//global.hours -= 2;
+	// if not tutorial1 or tutorial2, include hour system
+	if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+		global.hours -= 2;	
+	}
 }
 
 // Scan Button
@@ -66,7 +74,11 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 	GenericTextbox.label = "There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan) + " in zones " + string(zoneId) + "-" + string(end_zoneId);
 	
 	global.state = STATES.FREE;
-	//global.hours -= 2;
+	
+	// if not tutorial1 or tutorial2, include hour system
+	if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+		global.hours -= 2;	
+	}
 }
 
 // Send Data button
@@ -83,10 +95,17 @@ if (global.state == STATES.DATA_PICK_ZONE) {
     if (actualFish == guessedFish) {
         show_debug_message("You are correct!");
 		show_fish = true;
-		//global.hours += 1; 
+		// if not tutorial1 or tutorial2, include hour system
+		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+			global.hours += 1;	
+		}
     } else {
         show_debug_message("Incorrect.");
-		//global.hours -= 1; 
+		
+		// if not tutorial1 or tutorial2, include hour system
+		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+			global.hours -= 1;	
+		}
     }
 	global.fishSelected = -1;
     global.state = STATES.FREE; // Reset game state
@@ -109,12 +128,12 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 		instance_deactivate_object(FindAnglerButton);
 		instance_deactivate_object(GoFishButton);
 		instance_deactivate_object(ScanButton);
+		instance_deactivate_object(SendDataButton);
+		
 		
 		global.lose = true;
     }
-            
     global.state = STATES.FREE;
-	//global.hours -= 4;
 }
 
 // Win condition
@@ -125,20 +144,28 @@ if (global.win == true) {
 	if (global.IsTutorial1 == true) {
 		show_message("Click on the next level button to go to the next level.");	
 	}
+	instance_deactivate_layer("LakeSurveyEntries");
 	instance_deactivate_object(FindAnglerButton);
 	instance_deactivate_object(GoFishButton);
 	instance_deactivate_object(ScanButton);
 	instance_deactivate_object(SendDataButton);
-	instance_deactivate_layer("LakeSurveyEntries");
+	instance_deactivate_object(SendDataButton);
+	
 	
 	// with " + string(global.hours) + " hours remaining!");
 }
 
 // Game over conditions.
-// Implement 1x use Anglerfish later
-/*
-if (global.hours <= 0) {
-	show_message("Game Over, you lost");
-	game_restart();
+
+if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+	if (global.hours <= 0) {
+		global.lose = true;
+		layer_set_visible("Gameover", true);
+		instance_deactivate_layer("LakeSurveyEntries");
+		instance_deactivate_object(FindAnglerButton);
+		instance_deactivate_object(GoFishButton);
+		instance_deactivate_object(ScanButton);
+		instance_deactivate_object(SendDataButton);
+	}
 }
-*/
+

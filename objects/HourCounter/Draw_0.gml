@@ -1,7 +1,6 @@
-draw_self();
-
-// Set to the top right
-draw_set_halign(fa_right);
 draw_set_valign(fa_top);
+draw_set_halign(fa_center);
+draw_set_color(c_black);
+draw_set_font(FontToBeReplaced);
 
-draw_text(x,y, string(global.hours));
+draw_text_ext_transformed(x,y, string(global.hours) + " Hours", 25, 400, 3, 3, 0);

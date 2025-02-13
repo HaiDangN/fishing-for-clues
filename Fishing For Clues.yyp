@@ -51,12 +51,14 @@
     {"id":{"name":"LakeSurveyEntry","path":"objects/LakeSurveyEntry/LakeSurveyEntry.yy",},},
     {"id":{"name":"Level1Button","path":"objects/Level1Button/Level1Button.yy",},},
     {"id":{"name":"Level2Button","path":"objects/Level2Button/Level2Button.yy",},},
+    {"id":{"name":"Level3Button","path":"objects/Level3Button/Level3Button.yy",},},
     {"id":{"name":"ScanButton","path":"objects/ScanButton/ScanButton.yy",},},
     {"id":{"name":"SendDataButton","path":"objects/SendDataButton/SendDataButton.yy",},},
     {"id":{"name":"StartButton","path":"objects/StartButton/StartButton.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
+    {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"id":{"name":"FishEnums","path":"scripts/FishEnums/FishEnums.yy",},},
@@ -66,6 +68,7 @@
     {"id":{"name":"FishDefinitionBoxSprite","path":"sprites/FishDefinitionBoxSprite/FishDefinitionBoxSprite.yy",},},
     {"id":{"name":"GameOverBackground","path":"sprites/GameOverBackground/GameOverBackground.yy",},},
     {"id":{"name":"Lvl2Tutorial","path":"sprites/Lvl2Tutorial/Lvl2Tutorial.yy",},},
+    {"id":{"name":"Lvl3Tutorial","path":"sprites/Lvl3Tutorial/Lvl3Tutorial.yy",},},
     {"id":{"name":"MenuBackground","path":"sprites/MenuBackground/MenuBackground.yy",},},
     {"id":{"name":"Room2","path":"sprites/Room2/Room2.yy",},},
     {"id":{"name":"SpriteAnglerFish","path":"sprites/SpriteAnglerFish/SpriteAnglerFish.yy",},},
@@ -93,10 +96,18 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+<<<<<<< Updated upstream
     {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
+=======
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
+    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
+>>>>>>> Stashed changes
   ],
   "templateType":"game",
   "TextureGroups":[
