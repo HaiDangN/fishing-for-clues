@@ -6,6 +6,9 @@ draw_self();
 //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true); // displays collision
 
 shader_reset();
+if (variable_global_exists("fish_shown_start") and global.fish_shown_start[zoneId -1]) {
+	show_fish = true;
+}
 if (global.zone_highlight[zoneId - 1]) {
 	image_blend = c_green;
 } else {

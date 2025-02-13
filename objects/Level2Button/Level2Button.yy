@@ -4,13 +4,16 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Level2Button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,13 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"SpriteNextButton",
-    "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":{
-    "name":"SpriteNextButton",
-    "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
+    "name":"TEMPBOX",
+    "path":"sprites/TEMPBOX/TEMPBOX.yy",
   },
   "visible":true,
 }

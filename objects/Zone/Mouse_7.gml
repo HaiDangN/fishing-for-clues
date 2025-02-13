@@ -61,7 +61,10 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 	
 	// Result of the scan.
 	global.fishSelected = -1;
-	show_debug_message("There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan));
+	var end_zoneId = (zoneId + array_length(global.zone_list)/2 - 1) % (array_length(global.zone_list) + 1)
+	if (end_zoneId < zoneId) {end_zoneId +=1;}
+	GenericTextbox.label = "There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan) + " in zones " + string(zoneId) + "-" + string(end_zoneId);
+	
 	global.state = STATES.FREE;
 	//global.hours -= 2;
 }
@@ -102,6 +105,11 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 		
         show_debug_message(zoneId);
 		layer_set_visible("Gameover", true);
+		instance_deactivate_layer("LakeSurveyEntries");
+		instance_deactivate_object(FindAnglerButton);
+		instance_deactivate_object(GoFishButton);
+		instance_deactivate_object(ScanButton);
+		
 		global.lose = true;
     }
             
@@ -117,6 +125,12 @@ if (global.win == true) {
 	if (global.IsTutorial1 == true) {
 		show_message("Click on the next level button to go to the next level.");	
 	}
+	instance_deactivate_object(FindAnglerButton);
+	instance_deactivate_object(GoFishButton);
+	instance_deactivate_object(ScanButton);
+	instance_deactivate_object(SendDataButton);
+	instance_deactivate_layer("LakeSurveyEntries");
+	
 	// with " + string(global.hours) + " hours remaining!");
 }
 

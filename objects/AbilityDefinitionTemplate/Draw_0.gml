@@ -19,7 +19,7 @@ switch (action) {
 		description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty.";
 		break;
 	case "Scan":
-		description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of fish in those zones will be revealed.";
+		description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed.";
 		// maybe i can generate a rotating highlight of zones?
 		break;
 	case "Find Anglerfish":
@@ -32,4 +32,4 @@ switch (action) {
 		description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
 		break;
 }
-draw_text_ext_transformed(x, y - rect_height/6, description, rect_height/10, 3*rect_width/5, 1.5, 1.5, 0);
+draw_text_ext_transformed(x, y - rect_height/6, description, rect_height/10, rect_width - 320, 2, 2, 0);
