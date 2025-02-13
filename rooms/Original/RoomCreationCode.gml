@@ -1,6 +1,11 @@
 global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty, FishId.Primefish, FishId.Clownfish, FishId.Clownfish, FishId.Goldfish, FishId.Primefish, FishId.Goldfish, FishId.Clownfish, FishId.Clownfish]
 global.state = STATES.FREE;
 global.fishSelected = -1;
+global.Tstep = -1;
+global.IsTutorial1 = false;
+global.tutorial = false;
+global.win = false;
+global.lose = false;
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {

@@ -64,6 +64,14 @@ if (array_length(global.zone_list) == 0) {
 if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZONE or global.state == STATES.ANGLERFISH_PICK_ZONE or global.state ==STATES.DATA_PICK_ZONE) {
 	blink += 0.1
 	draw_set_alpha(0.5*sin(blink));
-	draw_circle_color(x, y, radius*2 + 10, c_green, c_green, false);
+	if (global.state == STATES.DATA_PICK_ZONE) {
+		for (var i = 0; i < slice_count; i++) {
+			if (!global.zone_list[i].show_fish) {
+				draw_sprite_ext(global.zone_sprite, 0, x,y, 2, 2, (-i*360)/ slice_count, c_green, 0.5*sin(blink))
+			}
+		}
+	} else {
+		draw_circle_color(x, y, radius*2 + 10, c_green, c_green, false);
+	}
 	draw_set_alpha(1);
 }
