@@ -54,9 +54,10 @@ if (fishId == FishId.RedHerring or fishId == FishId.Anglerfish) {
 	draw_set_valign(fa_top)
 	draw_text_ext_transformed(x + 1*sprite_width/10, y - 3* sprite_height/5, description, sprite_height/10, 2*sprite_width/5, 1.25, 1.25, 0);
 	var prime_list = [2, 3, 5, 7, 11];
-	for (var i = 0; i < slice_count; i++) {
+	for (var i = 0; i < slice_count; i++) {	
+		show_debug_message(i);
 		var is_prime = array_contains(prime_list, i);
-		draw_zone(x + 4*sprite_width/5, y - 2*sprite_height/5, FishId.Primefish, 90 - i*360/slice_count, is_prime, 0.5);
+		draw_zone(x + 4*sprite_width/5, y - 2*sprite_height/5, FishId.Primefish, 90 - i*360/slice_count - 360/slice_count, is_prime, 0.5);
 	}
 } else if (fishId == FishId.Goldfish) {
 	var description = "Goldfish are adjacent to at least one truly empty zone.";

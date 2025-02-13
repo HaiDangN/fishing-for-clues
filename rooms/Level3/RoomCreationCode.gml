@@ -1,7 +1,8 @@
-global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty, FishId.Primefish, FishId.Clownfish, FishId.Clownfish, FishId.Goldfish, FishId.Primefish, FishId.Goldfish, FishId.Clownfish, FishId.Clownfish]
+global.fish_list = [FishId.Clownfish, FishId.Clownfish, FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty, FishId.Clownfish, FishId.Clownfish]
 global.state = STATES.FREE;
 global.Tstep = 0;
-global.fish_shown_start = [false, false, false, false, true, false, true, false, false, false, false, false];
+global.fish_shown_start = [true, false, false, false, false, false, false, false, false];
+//global.fish_shown_start = array_create(8, true);
 global.fishSelected = -1;
 global.win = false;
 global.lose = false;
