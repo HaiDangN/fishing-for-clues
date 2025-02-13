@@ -7,51 +7,53 @@ if (global.state == STATES.FISH_PICK_ZONE) {
     var fishFound = global.fish_list[zoneId - 1];
 	
 	// Check if player selected the same fish
-	if (global.zone_list[zoneId-1]) {
+	if (global.zone_list[zoneId-1].show_fish) {
 		show_message("you alrady found this fish!");	
-	}
-	
-	
-	// If the found fish is an Anglerfish or if the zone is empty
-	// the player finds nothing.
-	if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
-		show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");
 	} else {
-		show_message("You found " + fishIdToString(fishFound) + " in this zone!");
-		show_fish = true;	
-	}
-    global.state = STATES.FREE;
-	
-	// Tutorial2 part 2
-	// LEVEL 1 SPECIFIC for tutorial
-	// Have player select a zone
-	// IF zone 1 --> Display Next Page
-	// IF any other zone --> Display keep fishing page
-	if (global.Tstep == 3 and global.IsTutorial1 == true) {
-		
-		if (global.zone_list[0].show_fish == true) {
-			// Increment step so they are not stuck.
-			global.Tstep += 1;
-			layer_set_visible("Tutorial2", false);
-			
-			// Tutorial4 Introduce Flash Cards
-			layer_set_visible("Tutorial3Next", true);
-			layer_set_visible("LakeSurveyEntries", true);
-			LakeSurveyEntry.visible = true;
+		// If the found fish is an Anglerfish or if the zone is empty
+		// the player finds nothing.
+		if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
+			show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");
 		} else {
-			layer_set_visible("Tutorial2", false);
+			show_message("You found " + fishIdToString(fishFound) + " in this zone!");
+			show_fish = true;	
+		}
+	    global.state = STATES.FREE;
+	
+		// Tutorial2 part 2
+		// LEVEL 1 SPECIFIC for tutorial
+		// Have player select a zone
+		// IF zone 1 --> Display Next Page
+		// IF any other zone --> Display keep fishing page
+		if (global.Tstep == 3 and global.IsTutorial1 == true) {
+		
+			if (global.zone_list[0].show_fish == true) {
+				// Increment step so they are not stuck.
+				global.Tstep += 1;
+				layer_set_visible("Tutorial2", false);
 			
-			// Tutorial4 Introduce Flash Cards
-			layer_set_visible("Tutorial3", true);
-			layer_set_visible("LakeSurveyEntries", true);
-			LakeSurveyEntry.visible = true;
+				// Tutorial4 Introduce Flash Cards
+				layer_set_visible("Tutorial3Next", true);
+				layer_set_visible("LakeSurveyEntries", true);
+				LakeSurveyEntry.visible = true;
+			} else {
+				layer_set_visible("Tutorial2", false);
+			
+				// Tutorial4 Introduce Flash Cards
+				layer_set_visible("Tutorial3", true);
+				layer_set_visible("LakeSurveyEntries", true);
+				LakeSurveyEntry.visible = true;
+			}
+		}
+	
+		// if not tutorial1 or tutorial2, include hour system
+		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+			global.hours -= 2;	
 		}
 	}
 	
-	// if not tutorial1 or tutorial2, include hour system
-	if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
-		global.hours -= 2;	
-	}
+	
+	
 }
 
 // Scan Button
@@ -83,32 +85,36 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 
 // Send Data button
 if (global.state == STATES.DATA_PICK_ZONE) {
-	// Get the fish in the selected zone
-	var actualFish = global.fish_list[zoneId - 1];
+	if (!global.zone_list[zoneId -1].show_fish) {
+		// Get the fish in the selected zone
+		var actualFish = global.fish_list[zoneId - 1];
 	
-	global.state = STATES.DATA_PICK_FISH;
+		global.state = STATES.DATA_PICK_FISH;
 	
-	// fish selected during STATES.SCAN_PICK_FISH
-    var guessedFish = global.fishSelected;
+		// fish selected during STATES.SCAN_PICK_FISH
+	    var guessedFish = global.fishSelected;
     
-	// Check if the player guessed the fish in the zone correctly.
-    if (actualFish == guessedFish) {
-        show_debug_message("You are correct!");
-		show_fish = true;
-		// if not tutorial1 or tutorial2, include hour system
-		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
-			global.hours += 1;	
-		}
-    } else {
-        show_debug_message("Incorrect.");
+		// Check if the player guessed the fish in the zone correctly.
+	    if (actualFish == guessedFish) {
+	        show_debug_message("You are correct!");
+			show_fish = true;
+			// if not tutorial1 or tutorial2, include hour system
+			if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+				global.hours += 1;	
+			}
+	    } else {
+	        show_debug_message("Incorrect.");
 		
-		// if not tutorial1 or tutorial2, include hour system
-		if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
-			global.hours -= 1;	
-		}
-    }
-	global.fishSelected = -1;
-    global.state = STATES.FREE; // Reset game state
+			// if not tutorial1 or tutorial2, include hour system
+			if (global.IsTutorial1 == false and global.IsTutorial2 == false) {
+				global.hours -= 1;	
+			}
+	    }
+		global.fishSelected = -1;
+	    global.state = STATES.FREE; // Reset game state
+	} else {
+		show_message("That zone is already revealed!");
+	}
 }
 
 // Anglerfish button
