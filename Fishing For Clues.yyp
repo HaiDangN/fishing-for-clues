@@ -28,6 +28,7 @@
     {"$GMFolder":"","%Name":"AbilityIcons","folderPath":"folders/Sprites/AbilityIcons.yy","name":"AbilityIcons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"FishIcons","folderPath":"folders/Sprites/FishIcons.yy","name":"FishIcons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"ButtonSprites","folderPath":"folders/Sprites/ButtonSprites.yy","name":"ButtonSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"FishIcons","folderPath":"folders/Sprites/FishIcons.yy","name":"FishIcons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tutorial","folderPath":"folders/Sprites/Tutorial.yy","name":"Tutorial","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
