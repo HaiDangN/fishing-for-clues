@@ -65,6 +65,7 @@
     {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"id":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"id":{"name":"FishEnums","path":"scripts/FishEnums/FishEnums.yy",},},
     {"id":{"name":"StateEnums","path":"scripts/StateEnums/StateEnums.yy",},},
     {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
@@ -103,6 +104,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Original","path":"rooms/Original/Original.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
