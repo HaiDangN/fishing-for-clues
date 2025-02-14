@@ -6,6 +6,8 @@ global.tutorial = false;
 global.win = false;
 global.lose = false;
 global.actionList = []; // look at StateEnums for the definition of an Action
+global.hours = infinity;
+global.level = infinity;
 
 
 var fish_count_map = ds_map_create();
