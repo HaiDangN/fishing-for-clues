@@ -1,117 +1,486 @@
 {
-  "$GMProject":"",
-  "%Name":"Fishing For Clues",
-  "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  "$GMProject": "",
+  "%Name": "Fishing For Clues",
+  "AudioGroups": [
+    {
+      "$GMAudioGroup": "",
+      "%Name": "audiogroup_default",
+      "name": "audiogroup_default",
+      "resourceType": "GMAudioGroup",
+      "resourceVersion": "2.0",
+      "targets": -1
+    }
   ],
-  "configs":{
-    "children":[],
-    "name":"Default",
+  "configs": {
+    "children": [],
+    "name": "Default"
   },
-  "defaultScriptType":1,
-  "Folders":[
-    {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Buttons","folderPath":"folders/Objects/Buttons.yy","name":"Buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"AbilityButtons","folderPath":"folders/Objects/Buttons/AbilityButtons.yy","name":"AbilityButtons","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"AbilityIcons","folderPath":"folders/Sprites/AbilityIcons.yy","name":"AbilityIcons","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"ButtonSprites","folderPath":"folders/Sprites/ButtonSprites.yy","name":"ButtonSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"FishIcons","folderPath":"folders/Sprites/FishIcons.yy","name":"FishIcons","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Tutorial","folderPath":"folders/Sprites/Tutorial.yy","name":"Tutorial","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
+  "defaultScriptType": 1,
+  "Folders": [
+    {
+      "$GMFolder": "",
+      "%Name": "Animation Curves",
+      "folderPath": "folders/Animation Curves.yy",
+      "name": "Animation Curves",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Extensions",
+      "folderPath": "folders/Extensions.yy",
+      "name": "Extensions",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Fonts",
+      "folderPath": "folders/Fonts.yy",
+      "name": "Fonts",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Notes",
+      "folderPath": "folders/Notes.yy",
+      "name": "Notes",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Objects",
+      "folderPath": "folders/Objects.yy",
+      "name": "Objects",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Buttons",
+      "folderPath": "folders/Objects/Buttons.yy",
+      "name": "Buttons",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "AbilityButtons",
+      "folderPath": "folders/Objects/Buttons/AbilityButtons.yy",
+      "name": "AbilityButtons",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Particle Systems",
+      "folderPath": "folders/Particle Systems.yy",
+      "name": "Particle Systems",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Paths",
+      "folderPath": "folders/Paths.yy",
+      "name": "Paths",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Rooms",
+      "folderPath": "folders/Rooms.yy",
+      "name": "Rooms",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Scripts",
+      "folderPath": "folders/Scripts.yy",
+      "name": "Scripts",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Sequences",
+      "folderPath": "folders/Sequences.yy",
+      "name": "Sequences",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Shaders",
+      "folderPath": "folders/Shaders.yy",
+      "name": "Shaders",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Sounds",
+      "folderPath": "folders/Sounds.yy",
+      "name": "Sounds",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Sprites",
+      "folderPath": "folders/Sprites.yy",
+      "name": "Sprites",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "AbilityIcons",
+      "folderPath": "folders/Sprites/AbilityIcons.yy",
+      "name": "AbilityIcons",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "ButtonSprites",
+      "folderPath": "folders/Sprites/ButtonSprites.yy",
+      "name": "ButtonSprites",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "FishIcons",
+      "folderPath": "folders/Sprites/FishIcons.yy",
+      "name": "FishIcons",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Tutorial",
+      "folderPath": "folders/Sprites/Tutorial.yy",
+      "name": "Tutorial",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Tile Sets",
+      "folderPath": "folders/Tile Sets.yy",
+      "name": "Tile Sets",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    },
+    {
+      "$GMFolder": "",
+      "%Name": "Timelines",
+      "folderPath": "folders/Timelines.yy",
+      "name": "Timelines",
+      "resourceType": "GMFolder",
+      "resourceVersion": "2.0"
+    }
   ],
-  "IncludedFiles":[],
-  "isEcma":false,
-  "LibraryEmitters":[],
-  "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+  "IncludedFiles": [],
+  "isEcma": false,
+  "LibraryEmitters": [],
+  "MetaData": {
+    "IDEVersion": "2024.11.0.179"
   },
-  "name":"Fishing For Clues",
-  "resources":[
-    {"id":{"name":"FontToBeReplaced","path":"fonts/FontToBeReplaced/FontToBeReplaced.yy",},},
-    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
-    {"id":{"name":"AbilityButtonScript","path":"objects/AbilityButtonScript/AbilityButtonScript.yy",},},
-    {"id":{"name":"AbilityDefinitionTemplate","path":"objects/AbilityDefinitionTemplate/AbilityDefinitionTemplate.yy",},},
-    {"id":{"name":"ActionHistory","path":"objects/ActionHistory/ActionHistory.yy",},},
-    {"id":{"name":"FindAnglerButton","path":"objects/FindAnglerButton/FindAnglerButton.yy",},},
-    {"id":{"name":"FishDefinitionTemplate","path":"objects/FishDefinitionTemplate/FishDefinitionTemplate.yy",},},
-    {"id":{"name":"GenericTextbox","path":"objects/GenericTextbox/GenericTextbox.yy",},},
-    {"id":{"name":"GoFishButton","path":"objects/GoFishButton/GoFishButton.yy",},},
-    {"id":{"name":"HourCounter","path":"objects/HourCounter/HourCounter.yy",},},
-    {"id":{"name":"LakeCreator","path":"objects/LakeCreator/LakeCreator.yy",},},
-    {"id":{"name":"LakeSurveyEntry","path":"objects/LakeSurveyEntry/LakeSurveyEntry.yy",},},
-    {"id":{"name":"Level1Button","path":"objects/Level1Button/Level1Button.yy",},},
-    {"id":{"name":"Level2Button","path":"objects/Level2Button/Level2Button.yy",},},
-    {"id":{"name":"Level3Button","path":"objects/Level3Button/Level3Button.yy",},},
-    {"id":{"name":"LevelButton","path":"objects/LevelButton/LevelButton.yy",},},
-    {"id":{"name":"RestartButton","path":"objects/RestartButton/RestartButton.yy",},},
-    {"id":{"name":"ScanButton","path":"objects/ScanButton/ScanButton.yy",},},
-    {"id":{"name":"SendDataButton","path":"objects/SendDataButton/SendDataButton.yy",},},
-    {"id":{"name":"StartButton","path":"objects/StartButton/StartButton.yy",},},
-    {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
-    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
-    {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
-    {"id":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
-    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"id":{"name":"FishEnums","path":"scripts/FishEnums/FishEnums.yy",},},
-    {"id":{"name":"StateEnums","path":"scripts/StateEnums/StateEnums.yy",},},
-    {"id":{"name":"ShOutline","path":"shaders/ShOutline/ShOutline.yy",},},
-    {"id":{"name":"defaultBackground","path":"sprites/defaultBackground/defaultBackground.yy",},},
-    {"id":{"name":"FishDefinitionBoxSprite","path":"sprites/FishDefinitionBoxSprite/FishDefinitionBoxSprite.yy",},},
-    {"id":{"name":"GameOverBackground","path":"sprites/GameOverBackground/GameOverBackground.yy",},},
-    {"id":{"name":"Lvl2Tutorial","path":"sprites/Lvl2Tutorial/Lvl2Tutorial.yy",},},
-    {"id":{"name":"Lvl3Tutorial","path":"sprites/Lvl3Tutorial/Lvl3Tutorial.yy",},},
-    {"id":{"name":"MenuBackground","path":"sprites/MenuBackground/MenuBackground.yy",},},
-    {"id":{"name":"Room2","path":"sprites/Room2/Room2.yy",},},
-    {"id":{"name":"Sprite31","path":"sprites/Sprite31/Sprite31.yy",},},
-    {"id":{"name":"SpriteAnglerFish","path":"sprites/SpriteAnglerFish/SpriteAnglerFish.yy",},},
-    {"id":{"name":"SpriteBackButton","path":"sprites/SpriteBackButton/SpriteBackButton.yy",},},
-    {"id":{"name":"SpriteClownFish","path":"sprites/SpriteClownFish/SpriteClownFish.yy",},},
-    {"id":{"name":"SpriteFindAngler","path":"sprites/SpriteFindAngler/SpriteFindAngler.yy",},},
-    {"id":{"name":"SpriteFish","path":"sprites/SpriteFish/SpriteFish.yy",},},
-    {"id":{"name":"SpriteGoldFish","path":"sprites/SpriteGoldFish/SpriteGoldFish.yy",},},
-    {"id":{"name":"SpriteLakeSurveyEntryCollisionMask","path":"sprites/SpriteLakeSurveyEntryCollisionMask/SpriteLakeSurveyEntryCollisionMask.yy",},},
-    {"id":{"name":"SpriteNextButton","path":"sprites/SpriteNextButton/SpriteNextButton.yy",},},
-    {"id":{"name":"SpritePrimeFish","path":"sprites/SpritePrimeFish/SpritePrimeFish.yy",},},
-    {"id":{"name":"SpriteRedHerring","path":"sprites/SpriteRedHerring/SpriteRedHerring.yy",},},
-    {"id":{"name":"SpriteScan","path":"sprites/SpriteScan/SpriteScan.yy",},},
-    {"id":{"name":"SpriteSendData","path":"sprites/SpriteSendData/SpriteSendData.yy",},},
-    {"id":{"name":"SpriteStartButton","path":"sprites/SpriteStartButton/SpriteStartButton.yy",},},
-    {"id":{"name":"SpriteTrulyEmptyZone","path":"sprites/SpriteTrulyEmptyZone/SpriteTrulyEmptyZone.yy",},},
-    {"id":{"name":"TBCBackground","path":"sprites/TBCBackground/TBCBackground.yy",},},
-    {"id":{"name":"TEMPBOX","path":"sprites/TEMPBOX/TEMPBOX.yy",},},
-    {"id":{"name":"Tutorial1","path":"sprites/Tutorial1/Tutorial1.yy",},},
-    {"id":{"name":"Tutorial2","path":"sprites/Tutorial2/Tutorial2.yy",},},
-    {"id":{"name":"Tutorial3","path":"sprites/Tutorial3/Tutorial3.yy",},},
-    {"id":{"name":"Tutorial4","path":"sprites/Tutorial4/Tutorial4.yy",},},
-    {"id":{"name":"Tutorial4B","path":"sprites/Tutorial4B/Tutorial4B.yy",},},
-    {"id":{"name":"Tutorial5","path":"sprites/Tutorial5/Tutorial5.yy",},},
-    {"id":{"name":"VictoryBackground","path":"sprites/VictoryBackground/VictoryBackground.yy",},},
+  "name": "Fishing For Clues",
+  "resources": [
+    {
+      "id": {
+        "name": "FontToBeReplaced",
+        "path": "fonts/FontToBeReplaced/FontToBeReplaced.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "AbilityButtonScript",
+        "path": "objects/AbilityButtonScript/AbilityButtonScript.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "AbilityDefinitionTemplate",
+        "path": "objects/AbilityDefinitionTemplate/AbilityDefinitionTemplate.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "ActionHistory",
+        "path": "objects/ActionHistory/ActionHistory.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "FindAnglerButton",
+        "path": "objects/FindAnglerButton/FindAnglerButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "FishDefinitionTemplate",
+        "path": "objects/FishDefinitionTemplate/FishDefinitionTemplate.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "GenericTextbox",
+        "path": "objects/GenericTextbox/GenericTextbox.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "GoFishButton",
+        "path": "objects/GoFishButton/GoFishButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "HourCounter",
+        "path": "objects/HourCounter/HourCounter.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "LakeCreator",
+        "path": "objects/LakeCreator/LakeCreator.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "LakeSurveyEntry",
+        "path": "objects/LakeSurveyEntry/LakeSurveyEntry.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "Level1Button",
+        "path": "objects/Level1Button/Level1Button.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "Level2Button",
+        "path": "objects/Level2Button/Level2Button.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "Level3Button",
+        "path": "objects/Level3Button/Level3Button.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "LevelButton",
+        "path": "objects/LevelButton/LevelButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "RestartButton",
+        "path": "objects/RestartButton/RestartButton.yy"
+      }
+    },
+    {
+      "id": { "name": "ScanButton", "path": "objects/ScanButton/ScanButton.yy" }
+    },
+    {
+      "id": {
+        "name": "SendDataButton",
+        "path": "objects/SendDataButton/SendDataButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "StartButton",
+        "path": "objects/StartButton/StartButton.yy"
+      }
+    },
+    { "id": { "name": "Zone", "path": "objects/Zone/Zone.yy" } },
+    { "id": { "name": "Level1", "path": "rooms/Level1/Level1.yy" } },
+    { "id": { "name": "Level2", "path": "rooms/Level2/Level2.yy" } },
+    { "id": { "name": "Level3", "path": "rooms/Level3/Level3.yy" } },
+    { "id": { "name": "Level4", "path": "rooms/Level4/Level4.yy" } },
+    { "id": { "name": "Menu", "path": "rooms/Menu/Menu.yy" } },
+    { "id": { "name": "FishEnums", "path": "scripts/FishEnums/FishEnums.yy" } },
+    {
+      "id": { "name": "StateEnums", "path": "scripts/StateEnums/StateEnums.yy" }
+    },
+    { "id": { "name": "ShOutline", "path": "shaders/ShOutline/ShOutline.yy" } },
+    {
+      "id": {
+        "name": "defaultBackground",
+        "path": "sprites/defaultBackground/defaultBackground.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "FishDefinitionBoxSprite",
+        "path": "sprites/FishDefinitionBoxSprite/FishDefinitionBoxSprite.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "GameOverBackground",
+        "path": "sprites/GameOverBackground/GameOverBackground.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "Lvl2Tutorial",
+        "path": "sprites/Lvl2Tutorial/Lvl2Tutorial.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "Lvl3Tutorial",
+        "path": "sprites/Lvl3Tutorial/Lvl3Tutorial.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "MenuBackground",
+        "path": "sprites/MenuBackground/MenuBackground.yy"
+      }
+    },
+    { "id": { "name": "Room2", "path": "sprites/Room2/Room2.yy" } },
+    { "id": { "name": "Sprite31", "path": "sprites/Sprite31/Sprite31.yy" } },
+    {
+      "id": {
+        "name": "SpriteAnglerFish",
+        "path": "sprites/SpriteAnglerFish/SpriteAnglerFish.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteBackButton",
+        "path": "sprites/SpriteBackButton/SpriteBackButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteClownFish",
+        "path": "sprites/SpriteClownFish/SpriteClownFish.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteFindAngler",
+        "path": "sprites/SpriteFindAngler/SpriteFindAngler.yy"
+      }
+    },
+    {
+      "id": { "name": "SpriteFish", "path": "sprites/SpriteFish/SpriteFish.yy" }
+    },
+    {
+      "id": {
+        "name": "SpriteGoldFish",
+        "path": "sprites/SpriteGoldFish/SpriteGoldFish.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteLakeSurveyEntryCollisionMask",
+        "path": "sprites/SpriteLakeSurveyEntryCollisionMask/SpriteLakeSurveyEntryCollisionMask.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteNextButton",
+        "path": "sprites/SpriteNextButton/SpriteNextButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpritePrimeFish",
+        "path": "sprites/SpritePrimeFish/SpritePrimeFish.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteRedHerring",
+        "path": "sprites/SpriteRedHerring/SpriteRedHerring.yy"
+      }
+    },
+    {
+      "id": { "name": "SpriteScan", "path": "sprites/SpriteScan/SpriteScan.yy" }
+    },
+    {
+      "id": {
+        "name": "SpriteSendData",
+        "path": "sprites/SpriteSendData/SpriteSendData.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteStartButton",
+        "path": "sprites/SpriteStartButton/SpriteStartButton.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "SpriteTrulyEmptyZone",
+        "path": "sprites/SpriteTrulyEmptyZone/SpriteTrulyEmptyZone.yy"
+      }
+    },
+    {
+      "id": {
+        "name": "TBCBackground",
+        "path": "sprites/TBCBackground/TBCBackground.yy"
+      }
+    },
+    { "id": { "name": "TEMPBOX", "path": "sprites/TEMPBOX/TEMPBOX.yy" } },
+    { "id": { "name": "Tutorial1", "path": "sprites/Tutorial1/Tutorial1.yy" } },
+    { "id": { "name": "Tutorial2", "path": "sprites/Tutorial2/Tutorial2.yy" } },
+    { "id": { "name": "Tutorial3", "path": "sprites/Tutorial3/Tutorial3.yy" } },
+    { "id": { "name": "Tutorial4", "path": "sprites/Tutorial4/Tutorial4.yy" } },
+    {
+      "id": { "name": "Tutorial4B", "path": "sprites/Tutorial4B/Tutorial4B.yy" }
+    },
+    { "id": { "name": "Tutorial5", "path": "sprites/Tutorial5/Tutorial5.yy" } },
+    {
+      "id": {
+        "name": "VictoryBackground",
+        "path": "sprites/VictoryBackground/VictoryBackground.yy"
+      }
+    }
   ],
-  "resourceType":"GMProject",
-  "resourceVersion":"2.0",
-  "RoomOrderNodes":[
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
-    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
-    {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
+  "resourceType": "GMProject",
+  "resourceVersion": "2.0",
+  "RoomOrderNodes": [
+    { "roomId": { "name": "Menu", "path": "rooms/Menu/Menu.yy" } },
+    { "roomId": { "name": "Level1", "path": "rooms/Level1/Level1.yy" } },
+    { "roomId": { "name": "Level2", "path": "rooms/Level2/Level2.yy" } },
+    { "roomId": { "name": "Level3", "path": "rooms/Level3/Level3.yy" } },
+    { "roomId": { "name": "Level4", "path": "rooms/Level4/Level4.yy" } }
   ],
-  "templateType":"game",
-  "TextureGroups":[
-    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
-  ],
+  "templateType": "game",
+  "TextureGroups": [
+    {
+      "$GMTextureGroup": "",
+      "%Name": "Default",
+      "autocrop": true,
+      "border": 2,
+      "compressFormat": "bz2",
+      "customOptions": "",
+      "directory": "",
+      "groupParent": null,
+      "isScaled": true,
+      "loadType": "default",
+      "mipsToGenerate": 0,
+      "name": "Default",
+      "resourceType": "GMTextureGroup",
+      "resourceVersion": "2.0",
+      "targets": -1
+    }
+  ]
 }
