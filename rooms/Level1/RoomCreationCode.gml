@@ -1,7 +1,7 @@
 global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty]
 global.state = STATES.FREE;
-global.Tstep = 1
-global.IsTutorial1 = true;
+global.Tstep = 1;
+global.level = 1;
 global.win = false;
 global.lose = false;
 

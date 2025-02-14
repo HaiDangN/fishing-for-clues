@@ -4,10 +4,10 @@ global.Tstep = 0;
 global.fish_shown_start = [true, false, false, false, false, false, false, false, false];
 //global.fish_shown_start = array_create(8, true);
 global.fishSelected = -1;
+global.hours = 12;
+global.level = 3;
 global.win = false;
 global.lose = false;
-global.IsTutorial1 = false;
-global.IsTutorial2 = false;
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {
