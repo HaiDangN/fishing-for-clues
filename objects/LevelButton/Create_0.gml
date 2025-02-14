@@ -11,4 +11,4 @@ instance_deactivate_object(SendDataButton);
 
 // next Button object is invisible
 // this is for levels 4+
-visible = false;
+visible = true;
