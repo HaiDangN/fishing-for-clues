@@ -1,9 +1,14 @@
-global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty]
+global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty, FishId.Primefish, FishId.Clownfish, FishId.Clownfish, FishId.Goldfish, FishId.Primefish, FishId.Goldfish, FishId.Clownfish, FishId.Clownfish]
 global.state = STATES.FREE;
-global.Tstep = 1;
-global.level = 1;
+global.fishSelected = -1;
+global.Tstep = -1;
+global.IsTutorial1 = false;
+global.tutorial = false;
 global.win = false;
 global.lose = false;
+global.IsTutorial2 = false;
+global.actionList = []; // look at StateEnums for the definition of an Action
+
 
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
@@ -14,7 +19,9 @@ for (var i = 0; i < array_length(global.fish_list); i++) {
 	} else {
 		fish_count_map[? global.fish_list[i]] = 1;
 	}
+	
 }
+
 
 var i = 0; 
 
@@ -23,11 +30,12 @@ var i = 0;
 var key = ds_map_find_first(fish_count_map);
 while (key != undefined) {
     var value = fish_count_map[? key];
-	var lakeSurveyEntry = instance_create_layer(170, 423 + i*(sprite_get_height(SpriteLakeSurveyEntryCollisionMask)-33), "LakeSurveyEntries", LakeSurveyEntry);
+	var lakeSurveyEntry = instance_create_layer(103, 128 + i*(sprite_get_height(SpriteLakeSurveyEntryCollisionMask) + 20), "LakeSurveyEntries", LakeSurveyEntry);
 	lakeSurveyEntry.mask_index = SpriteLakeSurveyEntryCollisionMask;
 	lakeSurveyEntry.sprite_index = fishIdToIcon(key);
-	lakeSurveyEntry.label = fishIdToString(key) + ": " + string(value);
+	lakeSurveyEntry.label = fishIdToString(key) + ": x" + string(value);
 	lakeSurveyEntry.fishId = key;
+	lakeSurveyEntry.visible = true;
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
 }

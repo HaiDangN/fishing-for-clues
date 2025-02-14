@@ -11,3 +11,10 @@ enum STATES {
 function isStatePickingFish() {
 	return global.state == STATES.DATA_PICK_FISH or global.state == STATES.SCAN_PICK_FISH;	
 }
+
+function Action(_ability, _result, _zoneSelected, _fishSelected) constructor {
+    ability = _ability;
+    result = _result;
+    zoneSelected = _zoneSelected;
+    fishSelected = _fishSelected;
+}
