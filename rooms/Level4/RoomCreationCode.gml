@@ -1,3 +1,4 @@
+// Initialize variables
 global.fish_list = [
 	FishId.Anglerfish,
 	FishId.Primefish,
@@ -8,12 +9,27 @@ global.fish_list = [
 	FishId.Clownfish,
 	FishId.Clownfish
 ];
+
+global.fish_shown_start = [
+	false,
+	true,
+	false,
+	false,
+	false,
+	false,
+	true,
+	false
+];
+
+// Debug
+//global.fish_shown_start = array_create(8, true);
+
+// Time Set
+global.hours = 12;
+
 global.state = STATES.FREE;
 global.Tstep = -1;
-global.fish_shown_start = [false, true, false, false, false, false, true, false];
-//global.fish_shown_start = array_create(8, true);
 global.fishSelected = -1;
-global.hours = 12;
 global.level = 4;
 global.win = false;
 global.lose = false;
@@ -26,9 +42,7 @@ for (var i = 0; i < array_length(global.fish_list); i++) {
 	} else {
 		fish_count_map[? global.fish_list[i]] = 1;
 	}
-	
 }
-
 
 var i = 0; 
 
@@ -56,9 +70,7 @@ FindAnglerButton.visible = true;
 GoFishButton.visible = true;
 ScanButton.visible = true;
 SendDataButton.visible = true;
-			
+
 LakeSurveyEntry.visible = true;
 LakeCreator.visible = true;
 layer_set_visible("LakeSurveyEntries", true);
-
-instance_deactivate_object(RestartButton);

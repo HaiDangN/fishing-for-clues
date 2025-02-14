@@ -1,4 +1,11 @@
-global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty]
+// Initialize variables
+global.fish_list = [
+	FishId.RedHerring,
+	FishId.Empty,
+	FishId.Anglerfish,
+	FishId.Empty
+];
+
 global.state = STATES.FREE;
 global.Tstep = 1;
 global.level = 1;
@@ -31,4 +38,3 @@ while (key != undefined) {
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
 }
-
