@@ -3,6 +3,7 @@ global.state = STATES.FREE;
 global.Tstep = 0;
 global.fish_shown_start = [true, false, false, false, false, false];
 global.fishSelected = -1;
+global.level = 2;
 global.win = false;
 global.lose = false;
 var fish_count_map = ds_map_create();

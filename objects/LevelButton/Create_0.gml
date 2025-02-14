@@ -1,0 +1,5 @@
+instance_deactivate_layer("LakeSurveyEntries");
+instance_deactivate_object(FindAnglerButton);
+instance_deactivate_object(GoFishButton);
+instance_deactivate_object(ScanButton);
+instance_deactivate_object(SendDataButton);

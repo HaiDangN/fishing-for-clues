@@ -1,0 +1,16 @@
+Note for tutorial button
+
+// When the player loses, we make the player restart the room
+event_user(0) = room_restart();
+
+// When player wins, we the player clicks next to go to next room
+event_user(1) = room_goto(Level);
+
+add more
+switch (global.level)
+{
+    case 0: room_goto(Level1); break;
+    case 1: room_goto(Level2); break;
+    case 2: room_goto(Level3); break;
+}
+

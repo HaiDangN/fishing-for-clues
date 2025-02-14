@@ -6,5 +6,3 @@ show_fish = false;
 instance_deactivate_object(FindAnglerButton);
 instance_deactivate_object(GoFishButton);
 instance_deactivate_object(ScanButton)
-global.IsTutorial1 = false;
-global.IsTutorial2 = true;

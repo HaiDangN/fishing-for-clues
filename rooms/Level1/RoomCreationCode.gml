@@ -1,7 +1,7 @@
 global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.Empty]
 global.state = STATES.FREE;
-global.Tstep = 1
-global.IsTutorial1 = true;
+global.Tstep = 1;
+global.level = 1;
 global.win = false;
 global.lose = false;
 
@@ -23,10 +23,10 @@ var i = 0;
 var key = ds_map_find_first(fish_count_map);
 while (key != undefined) {
     var value = fish_count_map[? key];
-	var lakeSurveyEntry = instance_create_layer(103, 128 + i*(sprite_get_height(SpriteLakeSurveyEntryCollisionMask) + 20), "LakeSurveyEntries", LakeSurveyEntry);
+	var lakeSurveyEntry = instance_create_layer(170, 423 + i*(sprite_get_height(SpriteLakeSurveyEntryCollisionMask)-33), "LakeSurveyEntries", LakeSurveyEntry);
 	lakeSurveyEntry.mask_index = SpriteLakeSurveyEntryCollisionMask;
 	lakeSurveyEntry.sprite_index = fishIdToIcon(key);
-	lakeSurveyEntry.label = fishIdToString(key) + ": x" + string(value);
+	lakeSurveyEntry.label = fishIdToString(key) + ": " + string(value);
 	lakeSurveyEntry.fishId = key;
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
