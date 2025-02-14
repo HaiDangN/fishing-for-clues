@@ -7,6 +7,9 @@ global.tutorial = false;
 global.win = false;
 global.lose = false;
 global.IsTutorial2 = false;
+global.actionList = []; // look at StateEnums for the definition of an Action
+
+
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {

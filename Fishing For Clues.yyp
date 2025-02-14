@@ -42,6 +42,7 @@
     {"id":{"name":"FontToBeReplaced","path":"fonts/FontToBeReplaced/FontToBeReplaced.yy",},},
     {"id":{"name":"AbilityButtonScript","path":"objects/AbilityButtonScript/AbilityButtonScript.yy",},},
     {"id":{"name":"AbilityDefinitionTemplate","path":"objects/AbilityDefinitionTemplate/AbilityDefinitionTemplate.yy",},},
+    {"id":{"name":"ActionHistory","path":"objects/ActionHistory/ActionHistory.yy",},},
     {"id":{"name":"FindAnglerButton","path":"objects/FindAnglerButton/FindAnglerButton.yy",},},
     {"id":{"name":"FishDefinitionTemplate","path":"objects/FishDefinitionTemplate/FishDefinitionTemplate.yy",},},
     {"id":{"name":"GenericTextbox","path":"objects/GenericTextbox/GenericTextbox.yy",},},
