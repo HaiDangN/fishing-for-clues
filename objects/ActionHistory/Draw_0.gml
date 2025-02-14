@@ -5,7 +5,6 @@ if (!surface_exists(surf)) {
 
 max_scroll = max(item_height, array_length(global.actionList) * item_height - view_height);
 // Set target to surface
-show_debug_message("Max scroll " + string(max_scroll));
 surface_set_target(surf);
 draw_clear_alpha(c_white, 0); // Clear with transparency
 
@@ -14,7 +13,7 @@ draw_rectangle_color(0, 0, view_width, view_height, c_white, c_white, c_white, c
 
 for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
     var draw_y = (array_length(global.actionList)-i) * item_height - scroll_offset;
-    show_debug_message("draw_y " + string(draw_y));
+    
     // Only draw items within the visible area
     if (draw_y + item_height >= 0 && draw_y <= view_height) {
 		draw_set_color(c_white)
@@ -37,6 +36,17 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 			case "Fish":
 				draw_sprite_stretched(SpriteFish, 0, _x + ability_width/10, draw_y - item_height + ability_width*0.2, ability_width * 0.8, ability_width * 0.8);
 				break;
+			case "Scan":
+				draw_sprite_stretched(SpriteScanSmall, 0, _x + ability_width*0.25, draw_y - item_height + ability_width*0.2, ability_width * 0.5, ability_width * 0.5);
+				draw_sprite_stretched(fishIdToIcon(action.fishSelected), 0, _x + ability_width*0.3, draw_y - item_height + ability_width*0.8, ability_width * 0.4, ability_width * 0.4);
+				break;
+			case "Data":
+				draw_sprite_stretched(SpriteSendDataSmall, 0, _x + ability_width*0.25, draw_y - item_height + ability_width*0.2, ability_width * 0.5, ability_width * 0.5);
+				draw_sprite_stretched(fishIdToIcon(action.fishSelected), 0, _x + ability_width*0.3, draw_y - item_height + ability_width*0.8, ability_width * 0.4, ability_width * 0.4);
+				break;
+			case "Anglerfish":
+				draw_sprite_stretched(SpriteFindAngler, 0, _x + ability_width/10, draw_y - item_height + ability_width*0.2, ability_width * 0.8, ability_width * 0.8);
+				break;
 			default:
 				break;
 		}
@@ -56,6 +66,24 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 		switch (action.ability) {
 			case "Fish":
 				draw_sprite_stretched(fishIdToIcon(action.result), 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
+				break;
+			case "Scan":
+				draw_text_transformed(_x + result_width/2, draw_y - item_height/2, string(action.result),2,2,0);
+				break;
+			case "Data":
+				if (action.result) {
+					draw_sprite_stretched(Checkmark, 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
+				} else {
+					draw_sprite_stretched(Xmark, 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
+				}
+				break;
+			case "Anglerfish":
+				if (action.result) {
+					draw_sprite_stretched(Checkmark, 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
+				} else {
+					draw_sprite_stretched(Xmark, 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
+				}
+				break;
 		}
     }
 }
