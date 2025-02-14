@@ -2,11 +2,9 @@ global.fish_list = [FishId.RedHerring, FishId.Empty, FishId.Anglerfish, FishId.E
 global.state = STATES.FREE;
 global.fishSelected = -1;
 global.Tstep = -1;
-global.IsTutorial1 = false;
 global.tutorial = false;
 global.win = false;
 global.lose = false;
-global.IsTutorial2 = false;
 global.actionList = []; // look at StateEnums for the definition of an Action
 
 
