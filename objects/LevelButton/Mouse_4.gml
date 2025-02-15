@@ -22,7 +22,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		
 		// Scan Tutorial
 		if (global.level == 2) {
-			event_user(3);	
+			event_user(3);
 		}
 		
 		// Send Data

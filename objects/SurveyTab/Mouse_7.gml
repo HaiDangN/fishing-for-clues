@@ -6,15 +6,15 @@ if (position_meeting(mouse_x, mouse_y, id)) {
 		
 		// Scan Tutorial
 		if (global.level == 2) {
-			event_user(1);	
+			event_user(0);	
 		}
 		
 		// Send Data
 		if (global.level == 3) {
-			event_user(2);
+			event_user(0);
 		}
 		
 		if (global.level == 4) {
-			event_user(3);
+			event_user(0);
 		}
 }

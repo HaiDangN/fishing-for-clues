@@ -36,7 +36,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 				layer_set_visible("Tutorial3Next", true);
 				layer_set_visible("LakeSurveyEntries", true);
 				LakeSurveyEntry.visible = true;
-				LevelButton.visible = true;
+				instance_activate_object(LevelButton);
 			} else {
 				layer_set_visible("Tutorial2", false);
 			
@@ -131,7 +131,7 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			global.win = true;
 		
 	    } else {
-		
+			
 	        show_debug_message(zoneId);
 			layer_set_visible("Gameover", true);
 			instance_deactivate_layer("LakeSurveyEntries");
@@ -139,7 +139,9 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			instance_deactivate_object(GoFishButton);
 			instance_deactivate_object(ScanButton);
 			instance_deactivate_object(SendDataButton);
-		
+			instance_deactivate_object(BackButton);
+			instance_deactivate_object(HelpTab);
+			instance_deactivate_object(SurveyTab);
 		
 			global.lose = true;
 	    }
@@ -162,6 +164,8 @@ if (global.win == true) {
 	instance_deactivate_object(ScanButton);
 	instance_deactivate_object(SendDataButton);
 	instance_deactivate_object(SendDataButton);
+	instance_deactivate_object(HelpTab);
+	instance_deactivate_object(SurveyTab);
 	
 	
 	// with " + string(global.hours) + " hours remaining!");
@@ -179,6 +183,8 @@ if (global.level >= 3) {
 		instance_deactivate_object(GoFishButton);
 		instance_deactivate_object(ScanButton);
 		instance_deactivate_object(SendDataButton);
+		instance_deactivate_object(HelpTab);
+		instance_deactivate_object(SurveyTab);
 	}
 }
 

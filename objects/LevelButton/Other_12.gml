@@ -21,7 +21,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			instance_activate_object(GoFishButton);
 			
 			// The tutorial next button is invisible
-			visible = false;
+			instance_deactivate_object(LevelButton);
 		}
 		
 		// Tutorial 3 Introduce Flashcards
@@ -42,7 +42,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			
 			// Have lake survey be invisible on Angler page
 			instance_deactivate_object(LakeSurveyEntry);
-			
+
 			// Show Angler Button
 			instance_activate_object(FindAnglerButton);
 		}

@@ -18,8 +18,7 @@ if (isActive && mouse_check_button_pressed(mb_left)) {
 		if (global.Tstep == 2) {
 			layer_set_visible("Tutorial2", false);
 			layer_set_visible("Tutorial1", true);
-			LevelButton.visible = true;
-			
+			instance_activate_object(LevelButton);
 		}
 		
 		// Tutorial 3 Introduce Flashcards
