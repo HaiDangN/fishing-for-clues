@@ -4,12 +4,46 @@ if (!surface_exists(surf)) {
 }
 
 max_scroll = max(item_height, array_length(global.actionList) * item_height - view_height);
+var action_width = 50;
+var ability_width = 80;
+var zone_width = 70;
+var result_width = view_width - action_width - ability_width - zone_width;
+
+// Create the header
+var header_height = 100;
+draw_set_color(c_white);
+draw_rectangle(x, y - header_height, x + view_width, y, false);
+
+draw_set_color(c_black);
+draw_line(x, y - header_height, x + view_width, y - header_height);
+
+
+// Turn # column header
+
+draw_set_valign(fa_top);
+draw_set_halign(fa_center);
+
+draw_line(x + action_width, y - header_height, x+ action_width, y);
+draw_text_transformed(x + action_width/2, y - header_height/2, "#",2,2,0);
+
+draw_line( x + action_width + ability_width, y - header_height, x+ action_width + ability_width, y);
+draw_text_ext_transformed( x + action_width + ability_width/2, y - header_height/2, "Ability",0, ability_width, 1.5,1.5,0);
+
+draw_line( x + action_width + ability_width + zone_width, y - header_height, x+ action_width + ability_width + zone_width, y);
+draw_text_ext_transformed( x + action_width + ability_width + zone_width/2, y - header_height/2, "Zone(s)",0, zone_width, 1.3,1.3,0);
+
+draw_line( x + action_width + ability_width + zone_width + result_width, y - header_height,x + action_width + ability_width + zone_width + result_width, y);
+draw_text_ext_transformed( x + action_width + ability_width + zone_width + result_width/2 , y - header_height/2, "Result",0, result_width, 1.5,1.5,0);
+
+draw_line(x, y-1,x+ view_width, y-1);
 // Set target to surface
 surface_set_target(surf);
 draw_clear_alpha(c_white, 0); // Clear with transparency
 
+
 // Draw list items inside the surface
 draw_rectangle_color(0, 0, view_width, view_height, c_white, c_white, c_white, c_white, false);
+
 
 for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
     var draw_y = (array_length(global.actionList)-i) * item_height - scroll_offset;
@@ -22,7 +56,7 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 		
 		// Action # 
 		var _x = 0;
-		var action_width = 50;
+		
 		
 		draw_line(action_width, draw_y - item_height, action_width, draw_y);
 		draw_set_valign(fa_middle)
@@ -30,7 +64,7 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 		_x += action_width;
 		
 		// Ability used
-		var ability_width = 80;
+		
 		var action = global.actionList[i];
 		switch (action.ability) {
 			case "Fish":
@@ -54,7 +88,7 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 		draw_line(_x, draw_y - item_height, _x, draw_y); // draws vertical line to the right
 		
 		// Zone selected
-		var zone_width = 70;
+		
 		draw_line(_x + zone_width, draw_y - item_height, _x + zone_width, draw_y);
 		draw_set_valign(fa_middle)
 		draw_text_transformed(_x + zone_width/2, draw_y - item_height/2, string(action.zoneSelected),2,2,0);
@@ -62,7 +96,6 @@ for (var i = array_length(global.actionList) -1 ; i >=0; i--) {
 		draw_line(0, draw_y, view_width, draw_y);
 		
 		// Result
-		var result_width = view_width - _x;
 		switch (action.ability) {
 			case "Fish":
 				draw_sprite_stretched(fishIdToIcon(action.result), 0, _x + result_width/10, draw_y - item_height + result_width*0.1, result_width * 0.8, result_width * 0.8);
