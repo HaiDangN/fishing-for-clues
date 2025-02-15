@@ -33,6 +33,8 @@ global.fishSelected = -1;
 global.level = 4;
 global.win = false;
 global.lose = false;
+global.actionList = [];
+
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {

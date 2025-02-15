@@ -25,7 +25,8 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		// IF zone 1 --> Display Next Page
 		// IF any other zone --> Display keep fishing page
 		if (global.Tstep == 3 and global.level = 1) {
-		
+			BackButton.visible = false;
+			BackButton.isActive = false;
 			if (global.zone_list[0].show_fish == true) {
 				// Increment step so they are not stuck.
 				global.Tstep += 1;
@@ -35,6 +36,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 				layer_set_visible("Tutorial3Next", true);
 				layer_set_visible("LakeSurveyEntries", true);
 				LakeSurveyEntry.visible = true;
+				LevelButton.visible = true;
 			} else {
 				layer_set_visible("Tutorial2", false);
 			

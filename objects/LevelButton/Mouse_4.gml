@@ -13,7 +13,11 @@ if (mouse_check_button_pressed(mb_left)) {
 		
 		// Tutorial 1
 		if (global.level == 1) {
-			event_user(2);
+			if (global.tutDone) {
+				event_user(6);
+			} else {
+				event_user(2);
+			}
 		}
 		
 		// Scan Tutorial

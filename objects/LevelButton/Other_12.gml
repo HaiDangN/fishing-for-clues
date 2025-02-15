@@ -1,11 +1,13 @@
 // Tutorial 1
 if (mouse_check_button_pressed(mb_left)) {
     if (position_meeting(mouse_x, mouse_y, id)) {
-
+		
 		// Introduce lake
 		if (global.Tstep == 1) {
 			layer_set_visible("Tutorial1", true);
 			LakeCreator.visible = true;
+			BackButton.isActive = true
+			BackButton.visible = true
 		}
 		
 		// Tutorial2
@@ -19,7 +21,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			instance_activate_object(GoFishButton);
 			
 			// The tutorial next button is invisible
-			// visible = false;
+			visible = false;
 		}
 		
 		// Tutorial 3 Introduce Flashcards
@@ -32,6 +34,11 @@ if (mouse_check_button_pressed(mb_left)) {
 		if (global.Tstep == 4) {
 			layer_set_visible("Tutorial3Next", false);
 			layer_set_visible("Tutorial4", true);
+			
+			global.tutDone = true
+			
+			visible = false;
+			
 			
 			// Have lake survey be invisible on Angler page
 			instance_deactivate_object(LakeSurveyEntry);

@@ -8,10 +8,15 @@ global.fish_list = [
 
 global.state = STATES.FREE;
 global.Tstep = 1;
+global.tutDone = false;
+global.Hstep = 4;
 global.level = 1;
 global.win = false;
 global.lose = false;
+global.actionList = [];
 
+BackButton.isActive = false
+BackButton.visible = false
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {
