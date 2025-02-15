@@ -2,7 +2,7 @@
 
 
 function draw_lake(_x, _y, _radius, _col, _alpha, zones){
-	var sprite_surface_id = surface_create(256, 256); // Create a blank surface
+	var sprite_surface_id = surface_create(_radius *2 + 10, _radius*2 + 10); // Create a blank surface
 	surface_set_target(sprite_surface_id);       // Start drawing on the surface
 	draw_clear_alpha(c_black, 0);        // Transparent background
 	//draw_circle(1, 1, 20, false);
@@ -28,10 +28,8 @@ function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 
 	draw_primitive_end();
 	surface_reset_target();  
-	var sprite = sprite_create_from_surface(sprite_surface_id, center_x, 0, center_x *2, center_y *2, false, false, 0,center_y); // Create a sprite from it
-	
-	show_debug_message(SliceMask4.sprite_index);
-	sprite_collision_mask(sprite, false, bboxmode_automatic, 0,0,0,0, bboxkind_precise, 0);
+	var sprite = sprite_create_from_surface(sprite_surface_id, 0, 0, center_x * 2, center_y*2, false, false, center_x, center_y); // Create a sprite from it
+	sprite_collision_mask(sprite, false, 2, 0, center_x * 2,center_y * 2,0, bboxkind_precise, 0);
 	surface_free(sprite_surface_id);
 	draw_set_alpha(1);
 	return sprite;
@@ -49,7 +47,7 @@ if (array_length(global.zone_list) == 0) {
 	object_set_sprite(Zone, ZoneSprite);
 	for (var i = 0; i < slice_count; i++)
 	{   
-		var slice = instance_create_layer(x - 5*round((i+1)/slice_count), y , "Instances", Zone);
+		var slice = instance_create_layer(x, y , "Instances", Zone);
 	
 		slice.sprite_index = ZoneSprite
 	    slice.image_angle = ((-i * 360) / slice_count);
@@ -57,8 +55,8 @@ if (array_length(global.zone_list) == 0) {
 		slice.zoneId = i + 1;
 		slice.radius = radius;
 		slice.slice_count = slice_count
-		slice.image_xscale *= 1.5;
-		slice.image_yscale *= 1.5;
+		slice.image_xscale *= 2;
+		slice.image_yscale *= 2;
 		slice.fishId = global.fish_list[i];
 	    global.zone_list[i] = slice;
 		//show_debug_message(global.level_1[i]);
