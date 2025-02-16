@@ -1,5 +1,6 @@
 // For Levels past 4.
 if (room != Level1 and room != Level2 and room != Level3) {
+	// Turn back on if player wins or loses. In Zone Code.
 	instance_deactivate_object(LevelButton);
 } else {
 	// All for tutorial stuff

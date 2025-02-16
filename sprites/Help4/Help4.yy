@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"helppages",
-    "path":"folders/Sprites/Tutorial/helppages.yy",
+    "path":"folders/Sprites/Layers/helppages.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

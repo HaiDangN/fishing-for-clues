@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SpriteText",
+    "path":"sprites/SpriteText/SpriteText.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

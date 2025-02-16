@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Tutorial",
-    "path":"folders/Sprites/Tutorial.yy",
+    "path":"folders/Sprites/Layers/Tutorial.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

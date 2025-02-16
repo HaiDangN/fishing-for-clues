@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SpriteNextButton",
-    "path":"sprites/SpriteNextButton/SpriteNextButton.yy",
+    "name":"SpriteSurveyButton",
+    "path":"sprites/SpriteSurveyButton/SpriteSurveyButton.yy",
   },
   "spriteMaskId":null,
   "visible":false,

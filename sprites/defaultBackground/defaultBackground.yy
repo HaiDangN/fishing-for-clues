@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Tutorial",
-    "path":"folders/Sprites/Tutorial.yy",
+    "name":"Layers",
+    "path":"folders/Sprites/Layers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

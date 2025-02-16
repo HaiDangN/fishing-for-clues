@@ -152,12 +152,18 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			show_fish = true;
 			global.win = true;
 			global.lakeSurvey = false;
+			
+			// Specifically to re-activate in levels +3
+			instance_activate_object(LevelButton);
 			LevelButton.visible = true;
 	    } else {
 			GenericTextbox.label = "";
 			// If player selects incorrectly.
 	        show_debug_message(zoneId);
 			layer_set_visible("Gameover", true);
+			
+			// Specifically to re-activate in levels +3
+			instance_activate_object(LevelButton);
 			
 			// Disables game buttons and fish survey.
 			event_user(0);
@@ -190,6 +196,9 @@ if (global.level >= 3) {
 		global.lose = true;
 		layer_set_visible("Gameover", true);
 		GenericTextbox.label = "You ran out of hours!";
+		
+		// Specifically to re-activate in levels +3
+		instance_activate_object(LevelButton);
 		
 		// Disables game buttons and fish survey.
 		event_user(0);

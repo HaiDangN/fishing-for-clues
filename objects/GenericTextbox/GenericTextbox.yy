@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"TEMPBOX",
-    "path":"sprites/TEMPBOX/TEMPBOX.yy",
+    "name":"SpriteText",
+    "path":"sprites/SpriteText/SpriteText.yy",
   },
   "spriteMaskId":null,
   "visible":true,
