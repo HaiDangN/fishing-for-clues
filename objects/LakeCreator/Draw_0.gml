@@ -97,7 +97,7 @@ if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZO
 			}
 		}
 	} else {
-		draw_circle_color(x, y, radius*2 + 10, c_green, c_green, false);
+		draw_circle_color(x, y-20, radius*2 + 10, c_green, c_green, false);
 	}	
 	draw_set_alpha(1);
 }

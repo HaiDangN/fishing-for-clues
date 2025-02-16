@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"lake8",
   "bboxMode":0,
-  "bbox_bottom":701,
+  "bbox_bottom":738,
   "bbox_left":12,
   "bbox_right":707,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"29129dd2-3eda-44a0-ab47-13939719e382","name":"29129dd2-3eda-44a0-ab47-13939719e382","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4e6d79c3-1229-44ad-bbb4-c74575aea9b6","name":"4e6d79c3-1229-44ad-bbb4-c74575aea9b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":702,
+  "height":740,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3a49ac04-4b2e-4fe2-8e89-a4e64a647abb","blendMode":0,"displayName":"default","isLocked":false,"name":"3a49ac04-4b2e-4fe2-8e89-a4e64a647abb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0e382bd3-ee06-4ac5-a42b-5a63b31d73ca","blendMode":0,"displayName":"default","isLocked":false,"name":"0e382bd3-ee06-4ac5-a42b-5a63b31d73ca","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"lake8",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29129dd2-3eda-44a0-ab47-13939719e382","path":"sprites/lake8/lake8.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a2b64627-09ed-45c4-b555-0943fa0bef6f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e6d79c3-1229-44ad-bbb4-c74575aea9b6","path":"sprites/lake8/lake8.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cea34ed1-5d11-48b1-896c-55bec05f9b08","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

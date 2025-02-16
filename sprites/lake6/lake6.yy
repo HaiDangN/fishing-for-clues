@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"lake6",
   "bboxMode":0,
-  "bbox_bottom":701,
+  "bbox_bottom":738,
   "bbox_left":12,
   "bbox_right":707,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d06963f2-b189-48c5-b5b6-139909762972","name":"d06963f2-b189-48c5-b5b6-139909762972","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"240d189c-b2b4-47c8-93a3-ed145805ffa8","name":"240d189c-b2b4-47c8-93a3-ed145805ffa8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":702,
+  "height":739,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d80e5a06-75b1-41a0-90ab-b43051482c73","blendMode":0,"displayName":"default","isLocked":false,"name":"d80e5a06-75b1-41a0-90ab-b43051482c73","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"aef8e3c7-54a5-41f3-b8fe-a094f26e84ef","blendMode":0,"displayName":"default","isLocked":false,"name":"aef8e3c7-54a5-41f3-b8fe-a094f26e84ef","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"lake6",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d06963f2-b189-48c5-b5b6-139909762972","path":"sprites/lake6/lake6.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8f4d5836-031d-4fef-9cf9-0939aeb7dbbf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"240d189c-b2b4-47c8-93a3-ed145805ffa8","path":"sprites/lake6/lake6.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6e7145b4-3b73-4744-8c9b-0563a6d2d233","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

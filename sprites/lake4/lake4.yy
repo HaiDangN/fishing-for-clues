@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"lake4",
   "bboxMode":0,
-  "bbox_bottom":701,
+  "bbox_bottom":738,
   "bbox_left":12,
   "bbox_right":707,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b4938d72-5eb0-43e7-9076-04bd0ccd3b31","name":"b4938d72-5eb0-43e7-9076-04bd0ccd3b31","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9d415333-8f0e-4ff5-9fe4-373dd60b1cd9","name":"9d415333-8f0e-4ff5-9fe4-373dd60b1cd9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":702,
+  "height":739,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"019817a8-7a5c-4573-85ab-b4bbd1a71e04","blendMode":0,"displayName":"default","isLocked":false,"name":"019817a8-7a5c-4573-85ab-b4bbd1a71e04","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f9ac0637-b41d-4d8f-a898-7fe50a11dae8","blendMode":0,"displayName":"default","isLocked":false,"name":"f9ac0637-b41d-4d8f-a898-7fe50a11dae8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"lake4",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b4938d72-5eb0-43e7-9076-04bd0ccd3b31","path":"sprites/lake4/lake4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5d348962-aab2-4b49-8a18-15045ec2b6ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d415333-8f0e-4ff5-9fe4-373dd60b1cd9","path":"sprites/lake4/lake4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d497c210-f37e-46e6-8d71-2b66a03254de","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

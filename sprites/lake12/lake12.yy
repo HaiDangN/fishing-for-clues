@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"lake12",
   "bboxMode":0,
-  "bbox_bottom":701,
+  "bbox_bottom":737,
   "bbox_left":12,
   "bbox_right":707,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"27db763f-f2ae-4971-b087-8922d17ab295","name":"27db763f-f2ae-4971-b087-8922d17ab295","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4b31e28f-0352-4283-9886-7ebf326cba33","name":"4b31e28f-0352-4283-9886-7ebf326cba33","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":702,
+  "height":738,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"9c507571-1606-4234-9fd7-de7929596d87","blendMode":0,"displayName":"default","isLocked":false,"name":"9c507571-1606-4234-9fd7-de7929596d87","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4a5c7ef2-d365-4e14-8916-b10ac8cc521e","blendMode":0,"displayName":"default","isLocked":false,"name":"4a5c7ef2-d365-4e14-8916-b10ac8cc521e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"lake12",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27db763f-f2ae-4971-b087-8922d17ab295","path":"sprites/lake12/lake12.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0338dfb3-38b3-4ac2-b2ff-e88d31d09b55","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4b31e28f-0352-4283-9886-7ebf326cba33","path":"sprites/lake12/lake12.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9d0ddb68-a1b2-4f63-aa7f-c525022f665c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
