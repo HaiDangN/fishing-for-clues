@@ -1,6 +1,6 @@
 draw_set_color(c_black);
 draw_set_font(PixelFont);
-
+draw_self()
 
 // handles highlights
 blink += 0.09
@@ -19,12 +19,14 @@ if ((isStatePickingFish() and isFishSelectable(fishId)) or fishId == global.fish
 	//draw_rectangle_color(x, y+33, x + sprite_get_width(sprite_index)-50, y + sprite_get_height(sprite_index)+33, c_green, c_green, c_green, c_green, false);
 	draw_set_alpha(1);
 }
-draw_set_valign(fa_middle)
-draw_text_transformed(750, y + sprite_get_height(sprite_index)/2 - 10, label, 3, 3, 0);
+draw_set_valign(fa_middle);
+draw_set_color(c_black);
+draw_set_alpha(1);
+draw_text_transformed(750, y + sprite_get_height(sprite_index)/2, label, 3, 3, 0);
 // Draw the text to the right of the sprite
 
 
-// Marking up collision for debug purposes
+////Marking up collision for debug purposes
 //var left = bbox_left;
 //var top = bbox_top;
 //var right = bbox_right;
