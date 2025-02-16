@@ -40,5 +40,15 @@ function logIdle(timeSinceStart) {
 	
 	var _json = json_stringify(_data);
 	var path = string("users/{0}", global.userId);
-	FirebaseFirestore(path).Set(_json);
+	FirebaseFirestore(path).Update(_json);
+}
+
+function logCloseGame(timeSinceStart) {
+	var _data = {
+		game_closed_time: timeSinceStart	
+	}
+	
+	var _json = json_stringify(_data);
+	var path = string("users/{0}", global.userId);
+	FirebaseFirestore(path).Update(_json);
 }

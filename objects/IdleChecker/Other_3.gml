@@ -1,0 +1,1 @@
+logCloseGame(current_time);
