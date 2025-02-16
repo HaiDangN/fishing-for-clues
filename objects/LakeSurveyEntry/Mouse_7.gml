@@ -14,11 +14,8 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		global.state = STATES.SCAN_PICK_ZONE;
 		global.fishSelected = fishId;
 	} else {
-		show_message("Please pick something that is not empty or Anglerfish");
+		GenericTextbox.label = "Please pick something that is not empty or Anglerfish";
 	}
-	
-	
-	
 }
 
 if (global.state == STATES.DATA_PICK_FISH) {
@@ -28,6 +25,6 @@ if (global.state == STATES.DATA_PICK_FISH) {
 		global.state = STATES.DATA_PICK_ZONE;
 		global.fishSelected = fishId;
 	} else {
-		show_message("Please pick something that is not empty or Anglerfish");
+		GenericTextbox.label = "Please pick something that is not empty or Anglerfish";
 	}
 }

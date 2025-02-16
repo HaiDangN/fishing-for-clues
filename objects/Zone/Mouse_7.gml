@@ -11,10 +11,10 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		// If the found fish is an Anglerfish or if the zone is empty
 		// the player finds nothing.
 		if (fishFound == FishId.Anglerfish or fishFound == FishId.Empty) {
-			show_message("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");
+			GenericTextbox.label = ("You found nothing! This could mean the Anglerfish is here, or it could be truly empty!");
 			fishFound = FishId.Empty;
 		} else {
-			show_message("You found " + fishIdToString(fishFound) + " in this zone!");
+			GenericTextbox.label = ("You found " + fishIdToString(fishFound) + " in this zone!");
 			show_fish = true;	
 		}
 		// Reset Game State
@@ -62,7 +62,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 			global.hours -= 2;	
 		}
 	} else {
-		show_message("That zone is already revealed!");	
+		GenericTextbox.label = ("That zone is already revealed!");	
 	}
 }
 
@@ -113,7 +113,7 @@ if (global.state == STATES.DATA_PICK_ZONE) {
     
 		// Check if the player guessed the fish in the zone correctly.
 	    if (actualFish == guessedFish) {
-	        show_debug_message("You are correct!");
+	        GenericTextbox.label = ("There is a " + fishIdToString(guessedFish) + " in zone " + string(zoneId));
 			show_fish = true;
 			
 			// if not tutorial1 or tutorial2, include hour system
@@ -121,7 +121,7 @@ if (global.state == STATES.DATA_PICK_ZONE) {
 				global.hours += 1;	
 			}
 	    } else {
-	        show_debug_message("Incorrect.");
+	         GenericTextbox.label = ("There is not a " + fishIdToString(guessedFish) + " in zone " + string(zoneId));
 		
 			// if not tutorial1 or tutorial2, include hour system
 			if (global.level >= 3) {
@@ -138,7 +138,7 @@ if (global.state == STATES.DATA_PICK_ZONE) {
 		global.fishSelected = -1;
 	    global.state = STATES.FREE;
 	} else {
-		show_message("That zone is already revealed!");
+		GenericTextbox.label = ("That zone is already revealed!");
 	}
 }
 
@@ -147,12 +147,14 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 	if (!global.zone_list[zoneId -1].show_fish) {
 		// Check if user guessed Anglerfish correctly.
 	    if (global.fish_list[zoneId - 1] == FishId.Anglerfish) {
+			GenericTextbox.label = "";
 	        show_debug_message("Found Angler");
 			show_fish = true;
 			global.win = true;
 			global.lakeSurvey = false;
 			LevelButton.visible = true;
 	    } else {
+			GenericTextbox.label = "";
 			// If player selects incorrectly.
 	        show_debug_message(zoneId);
 			layer_set_visible("Gameover", true);
@@ -168,7 +170,7 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 		logAction(action, array_length(global.actionList));
 	    global.state = STATES.FREE;
 	} else {
-		show_message("That zone is already revealed!");
+		GenericTextbox.label = ("That zone is already revealed!");
 	}
 }
 
@@ -186,9 +188,10 @@ if (global.win == true) {
 if (global.level >= 3) {
 	if (global.hours <= 0) {
 		global.lose = true;
+		layer_set_visible("Gameover", true);
+		GenericTextbox.label = "You ran out of hours!";
 		
 		// Disables game buttons and fish survey.
 		event_user(0);
 	}
 }
-

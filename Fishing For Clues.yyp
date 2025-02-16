@@ -86,6 +86,7 @@
     {"id":{"name":"LakeSurveyEntry","path":"objects/LakeSurveyEntry/LakeSurveyEntry.yy",},},
     {"id":{"name":"LakeSurveyHover","path":"objects/LakeSurveyHover/LakeSurveyHover.yy",},},
     {"id":{"name":"LevelButton","path":"objects/LevelButton/LevelButton.yy",},},
+    {"id":{"name":"LevelDisplay","path":"objects/LevelDisplay/LevelDisplay.yy",},},
     {"id":{"name":"Obj_FirebaseREST_Listener_Firestore","path":"objects/Obj_FirebaseREST_Listener_Firestore/Obj_FirebaseREST_Listener_Firestore.yy",},},
     {"id":{"name":"Obj_FirebaseREST_Listener_On_firestore_collection","path":"objects/Obj_FirebaseREST_Listener_On_firestore_collection/Obj_FirebaseREST_Listener_On_firestore_collection.yy",},},
     {"id":{"name":"Obj_FirebaseREST_Listener_On_firestore_document","path":"objects/Obj_FirebaseREST_Listener_On_firestore_document/Obj_FirebaseREST_Listener_On_firestore_document.yy",},},
