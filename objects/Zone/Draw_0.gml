@@ -25,5 +25,5 @@ draw_text_transformed_color(text_x, text_y, zoneId, 3, 3, 0, c_black, c_black, c
 if (show_fish && fishId != FishId.Empty) {
 	var fish_x = x + lengthdir_x(radius * 1.25, 90 + image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
 	var fish_y = y + lengthdir_y(radius * 1.25, 90 + image_angle + ((0.5 * 360) / slice_count) - 360/slice_count);
-	draw_sprite_ext(fishIdToIcon(fishId), 0, fish_x, fish_y, 3, 3, 0, c_white, 1);	
+	draw_sprite_ext(fishIdToIcon(fishId), 0, fish_x, fish_y, 1, 1, 0, c_white, 1);	
 }

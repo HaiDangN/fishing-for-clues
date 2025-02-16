@@ -27,6 +27,25 @@ function fishIdToString(fishId) {
 	}
 }
 
+function fishIdToSurveySprite(fishId) {
+	switch(fishId) {
+		case FishId.Anglerfish:
+			return AnglerfishSurveySprite;
+		case FishId.RedHerring:
+			return RedHerringSurveySprite;
+		case FishId.Clownfish:
+			return ClownfishSurveySprite;
+		case FishId.Primefish:
+			return PrimefishSurveySprite;
+		case FishId.Goldfish:
+			return GoldfishSurveySprite;
+		case FishId.Empty:
+			return EmptyZoneSurveySprite;
+		default:
+			return "Kevin"; // This is the wrong case and if you see Kevin somewhere, it means something wrong with the given FishId
+	}
+}
+
 function fishIdToIcon(fishId) {
 	switch(fishId) {
 		case FishId.Anglerfish:

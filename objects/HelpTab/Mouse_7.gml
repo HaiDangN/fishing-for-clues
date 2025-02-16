@@ -1,4 +1,5 @@
 if (global.tutDone && position_meeting(mouse_x, mouse_y, id)) {
+		global.lakeSurvey = false;
 		// Tutorial 1
 		if (global.level == 1) {
 			event_user(0);
