@@ -32,3 +32,13 @@ function logAction(action, action_num) {
 	FirebaseFirestore(path).Set(_json);
 	
 }
+
+function logIdle(timeSinceStart) {
+	var _data = {
+		idle_start: timeSinceStart	
+	}
+	
+	var _json = json_stringify(_data);
+	var path = string("users/{0}", global.userId);
+	FirebaseFirestore(path).Set(_json);
+}

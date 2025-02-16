@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"SpriteLakeSurveyEntryCollisionMask",
   "bboxMode":1,
-  "bbox_bottom":99,
+  "bbox_bottom":59,
   "bbox_left":0,
-  "bbox_right":719,
+  "bbox_right":623,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":100,
+  "height":60,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8711b45d-b2ad-44aa-bc61-656f86a84034","blendMode":0,"displayName":"default","isLocked":false,"name":"8711b45d-b2ad-44aa-bc61-656f86a84034","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":720,
+  "width":624,
 }

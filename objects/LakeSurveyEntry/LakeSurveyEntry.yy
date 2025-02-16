@@ -36,6 +36,9 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"SpriteLakeSurveyEntryCollisionMask",
+    "path":"sprites/SpriteLakeSurveyEntryCollisionMask/SpriteLakeSurveyEntryCollisionMask.yy",
+  },
   "visible":true,
 }
