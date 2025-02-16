@@ -10,7 +10,7 @@ draw_set_halign(fa_center);
 draw_set_color(c_black);
 draw_set_font(PixelFont);
 
-draw_text_transformed(x, y - 3*rect_height/8, action, 2, 2, 0);
+draw_text_transformed(x, y - 4*rect_height/8, action, 2, 2, 0);
 
 var description = "";
 
@@ -32,4 +32,4 @@ switch (action) {
 		description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
 		break;
 }
-draw_text_ext_transformed(x, y - rect_height/6, description, rect_height/10, rect_width - 320, 2, 2, 0);
+draw_text_ext_transformed(x, y - 2.5*rect_height/8, description, rect_height/10, rect_width - 320, 2, 2, 0);
