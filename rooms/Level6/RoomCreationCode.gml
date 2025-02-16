@@ -1,24 +1,33 @@
 // Initialize variables
+// Scenario 2
 global.fish_list = [
+	FishId.Empty,
+	FishId.Empty,
+	FishId.Goldfish,
+	FishId.Clownfish,
+	FishId.Clownfish,
+	FishId.RedHerring,
+	FishId.Primefish,
+	FishId.Clownfish,
 	FishId.Clownfish,
 	FishId.Anglerfish,
 	FishId.Primefish,
-	FishId.Empty,
-	FishId.RedHerring,
-	FishId.Empty,
-	FishId.RedHerring,
-	FishId.Clownfish
+	FishId.Goldfish
 ];
 
 global.fish_shown_start = [
+	false,
+	false,
+	true,
+	false,
+	false,
 	true,
 	false,
 	false,
 	false,
 	false,
 	false,
-	true,
-	false
+	false,
 ];
 
 // Debug
@@ -30,7 +39,7 @@ global.hours = 12;
 global.state = STATES.FREE;
 global.Tstep = -1;
 global.fishSelected = -1;
-global.level = 4;
+global.level = 6;
 global.win = false;
 global.lose = false;
 global.actionList = [];
