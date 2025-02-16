@@ -18,7 +18,9 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 			show_fish = true;	
 		}
 	    global.state = STATES.FREE;
-		array_push(global.actionList, new Action("Fish", fishFound, string(zoneId), fishFound))
+		var action = new Action("Fish", fishFound, string(zoneId), fishFound);
+		array_push(global.actionList, action);
+		logAction(action, array_length(global.actionList));
 		show_debug_message(global.actionList);
 		// Tutorial2 part 2
 		// LEVEL 1 SPECIFIC for tutorial
@@ -77,7 +79,9 @@ if (global.state == STATES.SCAN_PICK_ZONE) {
 	GenericTextbox.label = "There are " + string_format(count, 0, 0) + " " + fishIdToString(fishToScan) + " in zones " + string(zoneId) + "-" + string(end_zoneId);
 	
 	global.state = STATES.FREE;
-	array_push(global.actionList, new Action("Scan", count, string(zoneId) + "-" + string(end_zoneId), fishToScan))
+	var action = new Action("Scan", count, string(zoneId) + "-" + string(end_zoneId), fishToScan);
+	array_push(global.actionList, action);
+	logAction(action, array_length(global.actionList));
 	show_debug_message(global.actionList);
 	// if not tutorial1 or tutorial2, include hour system
 	if (global.level >= 3) {
@@ -113,8 +117,9 @@ if (global.state == STATES.DATA_PICK_ZONE) {
 				global.hours -= 1;	
 			}
 	    }
-		array_push(global.actionList, new Action("Data", show_fish, string(zoneId), guessedFish))
-		
+		var action = new Action("Data", show_fish, string(zoneId), guessedFish);
+		array_push(global.actionList, action);
+		logAction(action, array_length(global.actionList));
 		global.fishSelected = -1;
 	    global.state = STATES.FREE; // Reset game state
 	} else {
@@ -148,8 +153,9 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 		
 			global.lose = true;
 	    }
-		array_push(global.actionList, new Action("Anglerfish", global.win, string(zoneId), FishId.Anglerfish))
-	
+		var action = new Action("Anglerfish", global.win, string(zoneId), FishId.Anglerfish);
+		array_push(global.actionList, action);
+		logAction(action, array_length(global.actionList));
 	    global.state = STATES.FREE;
 	} else {
 		show_message("That zone is already revealed!");

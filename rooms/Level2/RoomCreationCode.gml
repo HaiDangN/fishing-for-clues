@@ -16,7 +16,7 @@ global.fish_shown_start = [
 	false,
 	false
 ];
-
+global.hours = infinity;
 global.state = STATES.FREE;
 global.Tstep = 0;
 global.fishSelected = -1;

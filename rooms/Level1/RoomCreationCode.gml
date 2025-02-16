@@ -5,7 +5,7 @@ global.fish_list = [
 	FishId.Anglerfish,
 	FishId.Empty
 ];
-
+global.hours = infinity;
 global.state = STATES.FREE;
 global.Tstep = 1;
 global.tutDone = false;
