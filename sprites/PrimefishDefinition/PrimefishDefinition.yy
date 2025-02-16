@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"PrimefishDefinition",
   "bboxMode":0,
-  "bbox_bottom":0,
+  "bbox_bottom":227,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":446,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"31ad0a3a-ae90-4b4a-8045-35ff9df15eb2","name":"31ad0a3a-ae90-4b4a-8045-35ff9df15eb2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2fb6f606-eec9-4cab-85f4-faa635d3134d","name":"2fb6f606-eec9-4cab-85f4-faa635d3134d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":228,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4a2dc93d-147a-4baf-8c71-2dfbddc0ffaa","blendMode":0,"displayName":"default","isLocked":false,"name":"4a2dc93d-147a-4baf-8c71-2dfbddc0ffaa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bf9c4da7-c3dc-4af2-9449-3e6860349368","blendMode":0,"displayName":"default","isLocked":false,"name":"bf9c4da7-c3dc-4af2-9449-3e6860349368","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"PrimefishDefinition",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"31ad0a3a-ae90-4b4a-8045-35ff9df15eb2","path":"sprites/PrimefishDefinition/PrimefishDefinition.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a12c5281-4d81-483d-a6f9-0e1de994322f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2fb6f606-eec9-4cab-85f4-faa635d3134d","path":"sprites/PrimefishDefinition/PrimefishDefinition.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2e9b5147-e583-468b-ab24-714399bfb950","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":447,
 }

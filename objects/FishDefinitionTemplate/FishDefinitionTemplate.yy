@@ -8,8 +8,8 @@
   "name":"FishDefinitionTemplate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Definition Objects",
+    "path":"folders/Objects/Definition Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

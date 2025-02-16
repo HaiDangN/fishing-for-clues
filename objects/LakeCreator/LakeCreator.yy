@@ -9,8 +9,8 @@
   "name":"LakeCreator",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Lake Stuff",
+    "path":"folders/Objects/Lake Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

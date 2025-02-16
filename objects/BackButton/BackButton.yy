@@ -14,8 +14,8 @@
   "name":"BackButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Buttons",
-    "path":"folders/Objects/Buttons.yy",
+    "name":"Navigation Buttons",
+    "path":"folders/Objects/Buttons/Navigation Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

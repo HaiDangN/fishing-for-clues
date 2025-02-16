@@ -38,8 +38,9 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 				// Increment step so they are not stuck.
 				global.Tstep += 1;
 				layer_set_visible("Tutorial2", false);
-			
+				
 				// Tutorial4 Introduce Flash Cards
+				// Already found Red Herring
 				layer_set_visible("Tutorial3Next", true);
 				layer_set_visible("LakeSurveyEntries", true);
 				LakeSurveyEntry.visible = true;
