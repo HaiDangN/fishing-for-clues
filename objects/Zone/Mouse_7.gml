@@ -164,6 +164,7 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			
 			// Specifically to re-activate in levels +3
 			instance_activate_object(LevelButton);
+			LevelButton.visible = true;
 			
 			// Disables game buttons and fish survey.
 			event_user(0);
@@ -199,6 +200,7 @@ if (global.level >= 3) {
 		
 		// Specifically to re-activate in levels +3
 		instance_activate_object(LevelButton);
+		LevelButton.visible = true;
 		
 		// Disables game buttons and fish survey.
 		event_user(0);

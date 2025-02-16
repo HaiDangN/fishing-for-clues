@@ -1,12 +1,12 @@
 // Initialize variables
 global.fish_list = [
 	FishId.Clownfish,
+	FishId.Anglerfish,
 	FishId.Primefish,
 	FishId.Empty,
 	FishId.RedHerring,
 	FishId.Empty,
 	FishId.RedHerring,
-	FishId.Primefish,
 	FishId.Clownfish
 ];
 

@@ -3,7 +3,7 @@ layer_set_visible("Background", false);
 // Hide Fish Survey
 global.lakeSurvey = false;
 instance_deactivate_object(LakeSurveyEntry);
-
+instance_activate_object(LevelButton);
 
 if (global.Hstep == 1 || global.Hstep == 1 || global.Hstep == 3) {
 	LevelButton.visible = true;
