@@ -14,22 +14,45 @@ draw_text_transformed(x, y - 4*rect_height/8, action, 2, 2, 0);
 
 var description = "";
 
-switch (action) {
-	case "Go Fish":
-		description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty.";
-		break;
-	case "Scan":
-		description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed.";
-		// maybe i can generate a rotating highlight of zones?
-		break;
-	case "Find Anglerfish":
-		description = "Pick a zone. Tells you if the Anglerfish is in that zone or not."
-		break;
-	case "Send Data":
-		description = "Pick a kind of fish and then a zone. If the kind of fish you choose IS in that zone - gain 1 hour!";
-		break;
-	default:
-		description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
-		break;
+// Levels 3+
+if (room != Level1 and room != Level2) {
+	switch (action) {
+		case "Go Fish":
+			description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty. - Lose 2 hours!";
+			break;
+		case "Scan":
+			description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed. - Lose 2 hours!";
+			// maybe i can generate a rotating highlight of zones?
+			break;
+		case "Find Anglerfish":
+			description = "Pick a zone. Tells you if the Anglerfish is in that zone or not. - 1 Time Use";
+			break;
+		case "Send Data":
+			description = "Pick a kind of fish and then a zone. If the kind of fish you choose IS in that zone - Gain 1 hour! otherwise Lose 1 hour!";
+			break;
+		default:
+			description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
+			break;
+	}
+} else { // Tutorial 1, 2 and 3
+	switch (action) {
+		case "Go Fish":
+			description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty.";
+			break;
+		case "Scan":
+			description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed.";
+			// maybe i can generate a rotating highlight of zones?
+			break;
+		case "Find Anglerfish":
+			description = "Pick a zone. Tells you if the Anglerfish is in that zone or not.";
+			break;
+		case "Send Data":
+			description = "Pick a kind of fish and then a zone. If the kind of fish you choose IS in that zone - gain 1 hour!";
+			break;
+		default:
+			description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
+			break;
+	}
 }
+	
 draw_text_ext_transformed(x, y - 2.5*rect_height/8, description, rect_height/10, rect_width - 320, 2, 2, 0);
