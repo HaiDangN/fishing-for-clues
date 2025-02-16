@@ -1,5 +1,5 @@
 draw_set_color(c_black);
-draw_set_font(FontToBeReplaced);
+draw_set_font(PixelFont);
 
 
 // handles highlights

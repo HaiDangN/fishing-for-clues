@@ -26,7 +26,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 		logAction(action, array_length(global.actionList));
 		show_debug_message(global.actionList);
 		
-		// Tutorial2 part 2
+		// Tutorial2 part 2 Red Herring Logic
 		// LEVEL 1 SPECIFIC for tutorial
 		// Have player select a zone
 		// IF zone 1 --> Display Next Page
@@ -43,6 +43,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 				layer_set_visible("Tutorial3Next", true);
 				layer_set_visible("LakeSurveyEntries", true);
 				LakeSurveyEntry.visible = true;
+				global.lakeSurvey = true;
 				instance_activate_object(LevelButton);
 			} else {
 				layer_set_visible("Tutorial2", false);
@@ -51,6 +52,7 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 				layer_set_visible("Tutorial3", true);
 				layer_set_visible("LakeSurveyEntries", true);
 				LakeSurveyEntry.visible = true;
+				global.lakeSurvey = true;
 			}
 		}
 	
