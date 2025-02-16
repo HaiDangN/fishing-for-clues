@@ -1,12 +1,12 @@
 // Initialize variables
 global.fish_list = [
-	FishId.Anglerfish,
+	FishId.Clownfish,
 	FishId.Primefish,
+	FishId.Empty,
 	FishId.RedHerring,
 	FishId.Empty,
-	FishId.Primefish,
 	FishId.RedHerring,
-	FishId.Clownfish,
+	FishId.Primefish,
 	FishId.Clownfish
 ];
 
@@ -17,8 +17,8 @@ global.fish_shown_start = [
 	false,
 	false,
 	false,
-	true,
-	false
+	false,
+	true
 ];
 
 // Debug

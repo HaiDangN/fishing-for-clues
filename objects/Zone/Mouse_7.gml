@@ -130,6 +130,8 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 	        show_debug_message("Found Angler");
 			show_fish = true;
 			global.win = true;
+			global.lakeSurvey = false;
+			LevelButton.visible = true;
 		
 	    } else {
 			

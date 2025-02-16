@@ -13,6 +13,9 @@ if (mouse_check_button_pressed(mb_left)) {
 			instance_activate_object(ScanButton);
 			ScanButton.visible = true;
 			// Moves to next step in the tutorial.
+			global.lakeSurvey = true;
+			visible = false;
+			
 			global.Tstep += 1;
 		}
 		

@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-hover_sprite = ClownfishhDefinition
+hover_sprite = ClownfishDefinition
