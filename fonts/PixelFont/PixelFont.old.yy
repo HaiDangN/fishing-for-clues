@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"FontToBeReplaced",
+  "%Name":"PixelFont",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":24,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":26,
   "maintainGms1Font":false,
-  "name":"FontToBeReplaced",
+  "name":"PixelFont",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

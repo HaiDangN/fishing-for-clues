@@ -35,13 +35,12 @@ if (mouse_check_button_pressed(mb_left)) {
 			layer_set_visible("Tutorial3Next", false);
 			layer_set_visible("Tutorial4", true);
 			
-			global.tutDone = true
-			
+			global.tutDone = true;
 			visible = false;
-			
 			
 			// Have lake survey be invisible on Angler page
 			instance_deactivate_object(LakeSurveyEntry);
+			global.lakeSurvey = false;
 
 			// Show Angler Button
 			instance_activate_object(FindAnglerButton);

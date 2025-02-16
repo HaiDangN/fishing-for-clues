@@ -8,7 +8,7 @@ draw_rectangle_color(x-rect_width/2, y - rect_height/2, x+rect_width/2, y + rect
 draw_set_valign(fa_top);
 draw_set_halign(fa_center);
 draw_set_color(c_black);
-draw_set_font(FontToBeReplaced);
+draw_set_font(PixelFont);
 
 draw_text_transformed(x, y - 3*rect_height/8, action, 2, 2, 0);
 

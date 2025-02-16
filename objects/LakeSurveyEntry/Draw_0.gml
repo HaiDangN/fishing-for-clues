@@ -1,6 +1,6 @@
 draw_set_color(c_black);
-draw_set_font(FontToBeReplaced);
-draw_self()
+draw_set_font(PixelFont);
+
 
 // handles highlights
 blink += 0.09

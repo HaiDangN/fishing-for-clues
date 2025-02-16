@@ -18,6 +18,9 @@ global.actionList = [];
 
 BackButton.isActive = false
 BackButton.visible = false
+
+draw_set_font(PixelFont);
+
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {
