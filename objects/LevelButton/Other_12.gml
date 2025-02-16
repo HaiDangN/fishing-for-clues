@@ -21,7 +21,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			instance_activate_object(GoFishButton);
 			
 			// The tutorial next button is invisible
-			instance_deactivate_object(LevelButton);
+			LevelButton.visible = false;
 		}
 		
 		// Tutorial 3 Introduce Flashcards
