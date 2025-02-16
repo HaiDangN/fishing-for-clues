@@ -6,7 +6,7 @@ function unix_timestamp(datetime = date_current_datetime())
 }
 
 function generate_uuid() {
-	random_set_seed(date_datetime_string(date_current_datetime()));
+	random_set_seed(unix_timestamp());
     var timestamp = date_datetime_string(date_current_datetime()); // Get the current time
     var rand1 = irandom(999999); // Random number
     var rand2 = irandom(999999);
