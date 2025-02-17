@@ -2,10 +2,10 @@
 global.fish_list = [
 	FishId.Clownfish,
 	FishId.Clownfish,
+	FishId.Empty,
 	FishId.RedHerring,
 	FishId.Empty,
 	FishId.Anglerfish,
-	FishId.Empty,
 	FishId.Clownfish,
 	FishId.Clownfish
 ];
