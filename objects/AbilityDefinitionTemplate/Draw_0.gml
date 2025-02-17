@@ -18,37 +18,34 @@ var description = "";
 if (room != Level1 and room != Level2) {
 	switch (action) {
 		case "Go Fish":
-			description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty. - Lose 2 hours!";
+			description = " Select a zone to reveal the fish in it. The Anglerfish will appear as empty. Uses 2 hours.";
 			break;
 		case "Scan":
-			description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed. - Lose 2 hours!";
-			// maybe i can generate a rotating highlight of zones?
+			description = "Select a type of fish (except Anglerfish) and half of the zones. The number of that fish in those zones will be revealed. Uses 2 hours!";
 			break;
 		case "Find Anglerfish":
-			description = "Pick a zone. Tells you if the Anglerfish is in that zone or not. - 1 Time Use";
+			description = "Select a zone to check for the Anglerfish. Guess correctly to win! Guess wrong and you lose.";
 			break;
 		case "Send Data":
-			description = "Pick a kind of fish and then a zone. If the kind of fish you choose IS in that zone - Gain 1 hour! otherwise Lose 1 hour!";
+			description =  "Choose a type of fish and a zone. If the selected fish is in that zone, you gain 1 hour! If it's not, you lose 1 hour.";
 			break;
 		default:
 			description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
 			break;
 	}
-} else { // Tutorial 1, 2 and 3
+} else { // Tutorial 1, 2
+	// No Time consumption
 	switch (action) {
 		case "Go Fish":
-			description = "Pick a zone and it will reveal the fish in it. The Angler will appear as empty.";
+			description = " Select a zone to reveal the fish in it. The Anglerfish will appear as empty.";
 			break;
 		case "Scan":
-			description = "Pick a kind of fish (except for Anglerfish) and half the zones. The number of that fish in those zones will be revealed.";
-			// maybe i can generate a rotating highlight of zones?
+			description = "Select a type of fish (except Anglerfish) and half of the zones. The number of that fish in those zones will be revealed.";
 			break;
 		case "Find Anglerfish":
-			description = "Pick a zone. Tells you if the Anglerfish is in that zone or not.";
+			description = "Select a zone to check for the Anglerfish. Guess correctly to win! Guess wrong and you lose.";
 			break;
-		case "Send Data":
-			description = "Pick a kind of fish and then a zone. If the kind of fish you choose IS in that zone - gain 1 hour!";
-			break;
+
 		default:
 			description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
 			break;
