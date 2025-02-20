@@ -3,8 +3,6 @@
 if (mouse_check_button_pressed(mb_left)) {
     if (position_meeting(mouse_x, mouse_y, id)) {
 		
-		// Tutorial1
-		// Show text for this level
 		if (global.Tstep == 0) {
 			layer_set_visible("Tutorial1", false);
 			LakeCreator.visible = true;
@@ -18,11 +16,5 @@ if (mouse_check_button_pressed(mb_left)) {
 			
 			global.Tstep += 1;
 		}
-		
-		// Tutorial2
-		// Inside of ScanButton leftPress.
-		//
-		//
-		//
 	}
 }

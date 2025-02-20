@@ -1,6 +1,6 @@
 // Tutorial 1
 if (mouse_check_button_pressed(mb_left)) {
-    if (position_meeting(mouse_x, mouse_y, id)) {
+    if (visible && position_meeting(mouse_x, mouse_y, id)) {
 		
 		// Introduce lake
 		if (global.Tstep == 1) {
