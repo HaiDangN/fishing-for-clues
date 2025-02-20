@@ -1,5 +1,5 @@
 layer_set_visible("Help" + string(global.Hstep), true);
-layer_set_visible("Background", false);
+layer_set_visible("Background1", false);
 // Hide Fish Survey
 global.lakeSurvey = false;
 instance_deactivate_object(LakeSurveyEntry);
