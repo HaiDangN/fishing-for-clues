@@ -9,7 +9,7 @@ switch (global.level)
 	case 6: room_goto(Level7); break;
 	
 	// Replace with level 8 later.
-	case 7: room_goto(Level7); break;
+	case 7: room_goto(EndOfLevels); break;
 	
 	default: GenericTextbox.label = ("Either we're out of levels or the game broke. Report to the Devs");
 }
