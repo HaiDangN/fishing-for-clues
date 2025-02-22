@@ -8,7 +8,7 @@ global.lose = false;
 global.actionList = []; // look at StateEnums for the definition of an Action
 global.hours = infinity;
 global.level = infinity;
-
+global.userId = "-1"
 
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
