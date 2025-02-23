@@ -25,7 +25,6 @@ global.win = false;
 global.lose = false;
 global.lakeSurvey = false;
 global.actionList = [];
-
 draw_set_font(PixelFont);
 
 var fish_count_map = ds_map_create();

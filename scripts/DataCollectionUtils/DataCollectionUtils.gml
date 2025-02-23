@@ -14,23 +14,25 @@ function generate_uuid() {
 }
 
 function logAction(action, action_num) {
-	var _data = {
-		level : room_get_name(room),
-		action_number: action_num,
-		ability: action.ability,
-		zone_selected: action.zoneSelected,
-		result: action.result,
-		hours_left: global.hours
-	};
-	if (_data.ability == "Data" or _data.ability == "Scan") {
-		_data.fishSelected = fishIdToString(action.fishSelected);
+	if (variable_global_exists("userId")) {
+		
+		var _data = {
+			level : room_get_name(room),
+			action_number: action_num,
+			ability: action.ability,
+			zone_selected: action.zoneSelected,
+			result: action.result,
+			hours_left: global.hours
+		};
+		if (_data.ability == "Data" or _data.ability == "Scan") {
+			_data.fishSelected = fishIdToString(action.fishSelected);
+		}
+		var _json = json_stringify(_data);
+		date_set_timezone(timezone_utc);
+		show_debug_message(string(unix_timestamp()));
+		var path = string("users/{0}/actions/{1}", global.userId, string(unix_timestamp()));
+		FirebaseFirestore(path).Set(_json);
 	}
-	var _json = json_stringify(_data);
-	date_set_timezone(timezone_utc);
-	show_debug_message(string(unix_timestamp()));
-	var path = string("users/{0}/actions/{1}", global.userId, string(unix_timestamp()));
-	FirebaseFirestore(path).Set(_json);
-	
 }
 
 function logIdle(timeSinceStart) {

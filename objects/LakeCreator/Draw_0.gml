@@ -1,5 +1,6 @@
 
 
+var lake_offset = array_length(global.fish_list) <= 6 ? 20 : 0
 
 function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	var sprite_surface_id = surface_create(_radius *2 + 10, _radius*2 + 10); // Create a blank surface
@@ -84,7 +85,7 @@ if (array_length(global.zone_list) == 0) {
 	
 	var x_scale = (radius*4.3)/sprite_get_width(lakeSprite);
 	var y_scale = (radius*4.3)/sprite_get_height(lakeSprite);
-	draw_sprite_ext(lakeSprite, 0, x,y-20, x_scale, y_scale, 0, c_white, 1);
+	draw_sprite_ext(lakeSprite, 0, x,y-lake_offset, x_scale, y_scale, 0, c_white, 1);
 	//draw_sprite_stretched(lakeSprite, 0, x-radius*2, y-radius*2, radius*4, radius*4 + 10);
 }
 if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZONE or global.state == STATES.ANGLERFISH_PICK_ZONE or global.state ==STATES.DATA_PICK_ZONE) {
@@ -93,11 +94,11 @@ if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZO
 	if (global.state == STATES.DATA_PICK_ZONE) {
 		for (var i = 0; i < slice_count; i++) {
 			if (!global.zone_list[i].show_fish) {
-				draw_sprite_ext(global.zone_sprite, 0, x,y-20, 2, 2, (-i*360)/ slice_count, c_green, 0.5*sin(blink))
+				draw_sprite_ext(global.zone_sprite, 0, x,y-lake_offset, 2, 2, (-i*360)/ slice_count, c_green, 0.5*sin(blink))
 			}
 		}
 	} else {
-		draw_circle_color(x, y-20, radius*2 + 10, c_green, c_green, false);
+		draw_circle_color(x, y-lake_offset, radius*2 + 10, c_green, c_green, false);
 	}	
 	draw_set_alpha(1);
 }

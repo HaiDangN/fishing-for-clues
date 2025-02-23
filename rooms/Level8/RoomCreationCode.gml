@@ -1,17 +1,26 @@
 // Initialize variables
+// Scenario 3
 global.fish_list = [
-	FishId.Clownfish,
-	FishId.Clownfish,
+	FishId.Goldfish,
 	FishId.Empty,
-	FishId.RedHerring,
-	FishId.Empty,
+	FishId.Primefish,
 	FishId.Anglerfish,
+	FishId.Primefish,
+	FishId.Clownfish,
+	FishId.Clownfish,
+	FishId.Empty,
+	FishId.Goldfish,
+	FishId.RedHerring,
 	FishId.Clownfish,
 	FishId.Clownfish
 ];
 
 global.fish_shown_start = [
+	false,
+	false,
 	true,
+	false,
+	false,
 	false,
 	false,
 	false,
@@ -27,10 +36,10 @@ global.fish_shown_start = [
 // Time Set
 global.hours = 12;
 
-global.fishSelected = -1;
 global.state = STATES.FREE;
-global.Tstep = 0;
-global.level = 3;
+global.Tstep = -1;
+global.fishSelected = -1;
+global.level = 7;
 global.win = false;
 global.lose = false;
 global.actionList = [];
@@ -59,6 +68,21 @@ while (key != undefined) {
 	lakeSurveyEntry.sprite_index = fishIdToSurveySprite(key);
 	lakeSurveyEntry.label = string(value);
 	lakeSurveyEntry.fishId = key;
+	lakeSurveyEntry.visible = true;
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
 }
+
+instance_activate_object(FindAnglerButton);
+instance_activate_object(GoFishButton);
+instance_activate_object(ScanButton);
+instance_activate_object(SendDataButton);
+			
+FindAnglerButton.visible = true;
+GoFishButton.visible = true;
+ScanButton.visible = true;
+SendDataButton.visible = true;
+
+LakeSurveyEntry.visible = true;
+LakeCreator.visible = true;
+layer_set_visible("LakeSurveyEntries", true);
