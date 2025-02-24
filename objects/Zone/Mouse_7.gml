@@ -152,6 +152,17 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 	}
 }
 
+// Marking 
+if (global.state == STATES.MARK_PICK_ZONE) {
+	var initial = fishIdToInitial(global.fishSelected);
+	if (array_contains(marked_fish, initial)) {
+		var fish_index = array_get_index(marked_fish, initial);
+		array_delete(marked_fish, fish_index, 1);
+	} else {
+		array_push(marked_fish, initial);
+	}
+}
+
 // Win condition
 if (global.win == true) {
 	layer_set_visible("Victory", true);

@@ -27,6 +27,25 @@ function fishIdToString(fishId) {
 	}
 }
 
+function fishIdToInitial(fishId) {
+	switch(fishId) {
+		case FishId.Anglerfish:
+			return "A";
+		case FishId.RedHerring:
+			return "R";
+		case FishId.Clownfish:
+			return "C";
+		case FishId.Primefish:
+			return "P";
+		case FishId.Goldfish:
+			return "G";
+		case FishId.Empty:
+			return "E";
+		default:
+			return "Kevin"; // This is the wrong case and if you see Kevin somewhere, it means something wrong with the given FishId
+	
+	}
+}
 function fishIdToSurveySprite(fishId) {
 	switch(fishId) {
 		case FishId.Anglerfish:

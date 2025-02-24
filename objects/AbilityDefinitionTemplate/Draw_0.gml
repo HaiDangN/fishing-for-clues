@@ -29,6 +29,9 @@ if (room != Level1 and room != Level2) {
 		case "Send Data":
 			description =  "Choose a type of fish and a zone. If the selected fish is in that zone, you gain 1 hour! If it's not, you lose 1 hour.";
 			break;
+		case "Mark":
+			description = "Select a type of fish and where you think it is. No gameplay impact."
+			break;
 		default:
 			description = "THERES A BUG, TEXT SHOULD NOT BE SHOWING. REPORT TO DEVS"
 			break;

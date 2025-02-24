@@ -28,3 +28,8 @@ if (global.state == STATES.DATA_PICK_FISH) {
 		GenericTextbox.label = "Please pick something that is not empty or Anglerfish";
 	}
 }
+
+if (isStateMarking()) {
+	global.state = STATES.MARK_PICK_ZONE;
+	global.fishSelected = fishId;
+}

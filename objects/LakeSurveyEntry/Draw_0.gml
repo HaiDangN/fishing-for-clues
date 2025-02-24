@@ -4,8 +4,8 @@ draw_self()
 
 // handles highlights
 blink += 0.09
-if ((isStatePickingFish() and isFishSelectable(fishId)) or fishId == global.fishSelected) {
-	if (isStatePickingFish()) {
+if ((isStatePickingFish() and (isFishSelectable(fishId)) or isStateMarking()) or fishId == global.fishSelected) {
+	if (isStatePickingFish() or isStateMarking()) {
 		// pulses if fish is selectable
 		draw_set_alpha(0.3*sin(blink))
 		if (position_meeting(mouse_x, mouse_y, self)) {
@@ -14,7 +14,7 @@ if ((isStatePickingFish() and isFishSelectable(fishId)) or fishId == global.fish
 		}
 	}
 	// this means that this fish was selected so we can have a solid background 
-	else {draw_set_alpha(.5)}
+	if (fishId == global.fishSelected) {draw_set_alpha(.5)}
 	draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_green, c_green, c_green, c_green, false );
 	//draw_rectangle_color(x, y+33, x + sprite_get_width(sprite_index)-50, y + sprite_get_height(sprite_index)+33, c_green, c_green, c_green, c_green, false);
 	draw_set_alpha(1);
