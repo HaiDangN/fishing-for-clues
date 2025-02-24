@@ -17,5 +17,4 @@ if (global.state == STATES.FREE or global.state == STATES.FISH_PICK_ZONE or glob
 			global.zone_highlight[i % array_length(global.zone_list)] = true;
 		}
 	}
-	show_debug_message(global.zone_highlight);
 }

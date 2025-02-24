@@ -54,3 +54,15 @@ function logCloseGame(timeSinceStart) {
 	var path = string("users/{0}", global.userId);
 	FirebaseFirestore(path).Update(_json);
 }
+
+function logStart() {
+	if (variable_global_exists("userId")) {
+		var _data = {
+			game_start_timestamp: unix_timestamp()	
+		}
+	
+		var _json = json_stringify(_data);
+		var path = string("users/{0}", global.userId);
+		FirebaseFirestore(path).Update(_json);
+	}
+}

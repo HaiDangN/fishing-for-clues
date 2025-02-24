@@ -1,7 +1,9 @@
 ini_open("savedata.ini")
-global.userId = ini_read_string("userdata", "id", "-1");
-if (global.userId == "-1") {
+global.userId = ini_read_string("userdata", "id", "-kevin");
+if (global.userId == "-kevin") {
 	global.userId = generate_uuid();
 	ini_write_string("userdata", "id", global.userId);
 }
 ini_close();
+
+logStart();
