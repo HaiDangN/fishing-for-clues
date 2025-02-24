@@ -1,18 +1,18 @@
 // Initialize variables
-// Scenario 3
+// Scenario 2
 global.fish_list = [
-	FishId.Goldfish,
 	FishId.Empty,
+	FishId.Empty,
+	FishId.Goldfish,
+	FishId.Clownfish,
+	FishId.Clownfish,
+	FishId.RedHerring,
 	FishId.Primefish,
+	FishId.Clownfish,
+	FishId.Clownfish,
 	FishId.Anglerfish,
 	FishId.Primefish,
-	FishId.Clownfish,
-	FishId.Clownfish,
-	FishId.Empty,
-	FishId.Goldfish,
-	FishId.RedHerring,
-	FishId.Clownfish,
-	FishId.Clownfish
+	FishId.Goldfish
 ];
 
 global.fish_shown_start = [
@@ -21,7 +21,7 @@ global.fish_shown_start = [
 	true,
 	false,
 	false,
-	false,
+	true,
 	false,
 	false,
 	false,

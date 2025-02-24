@@ -1,5 +1,8 @@
 // Initialize variables
-// Scenario 1
+
+// 8 spaces, 2 primefish, first level with both goldfish and clownfish
+// reveal only one
+
 global.fish_list = [
 	FishId.Clownfish,
 	FishId.Clownfish,
@@ -7,27 +10,19 @@ global.fish_list = [
 	FishId.Goldfish,
 	FishId.Empty,
 	FishId.Goldfish,
-	FishId.Clownfish,
-	FishId.Clownfish,
-	FishId.RedHerring,
-	FishId.Empty,
 	FishId.Primefish,
 	FishId.Anglerfish
 ];
 
 global.fish_shown_start = [
 	false,
-	true,
-	false,
-	false,
 	false,
 	false,
 	true,
 	false,
-	true,
 	false,
 	false,
-	false,
+	false
 ];
 
 // Debug
