@@ -22,7 +22,8 @@ function logAction(action, action_num) {
 			ability: action.ability,
 			zone_selected: action.zoneSelected,
 			result: action.result,
-			hours_left: global.hours
+			hours_left: global.hours,
+			fish_revealed: revealedFish()
 		};
 		if (_data.ability == "Data" or _data.ability == "Scan") {
 			_data.fishSelected = fishIdToString(action.fishSelected);

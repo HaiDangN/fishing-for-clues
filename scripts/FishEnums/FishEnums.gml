@@ -70,3 +70,13 @@ function isFishSelectable(fishId) {
 	return fishId != FishId.Anglerfish and fishId != FishId.Empty;	
 }
 global.fishSelected = -1;
+
+function revealedFish() {
+	var count = 0;
+	for (var i = 0; i < array_length(global.zone_list); i++) {
+		if (global.zone_list[i].show_fish) {
+			count += 1;
+		}
+	}
+	return count;
+}
