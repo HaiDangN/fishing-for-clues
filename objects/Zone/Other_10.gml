@@ -9,6 +9,7 @@ instance_deactivate_object(FindAnglerButton);
 instance_deactivate_object(GoFishButton);
 instance_deactivate_object(ScanButton);
 instance_deactivate_object(SendDataButton);
+instance_deactivate_object(MarkButton);
 
 // Turn off back button
 instance_deactivate_object(BackButton);
