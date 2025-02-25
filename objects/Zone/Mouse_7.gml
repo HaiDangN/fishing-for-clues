@@ -161,6 +161,9 @@ if (global.state == STATES.MARK_PICK_ZONE) {
 	} else {
 		array_push(marked_fish, initial);
 	}
+	
+	var action = new Action("Mark", marked_fish, string(zoneId), global.fishSelected);
+	logMark(action, array_length(global.actionList));
 }
 
 // Win condition

@@ -67,3 +67,25 @@ function logStart() {
 		FirebaseFirestore(path).Update(_json);
 	}
 }
+
+function logMark(action, action_num) {
+	if (variable_global_exists("userId")) {
+		
+		var _data = {
+			level : room_get_name(room),
+			action_number: action_num,
+			ability: action.ability,
+			zone_selected: action.zoneSelected,
+			result: string(action.result),
+			hours_left: global.hours,
+			fish_revealed: revealedFish(),
+			fishSelected: fishIdToString(action.fishSelected)
+		};
+		
+		var _json = json_stringify(_data);
+		date_set_timezone(timezone_utc);
+		show_debug_message(string(unix_timestamp()));
+		var path = string("users/{0}/marks/{1}", global.userId, string(unix_timestamp()));
+		FirebaseFirestore(path).Set(_json);
+	}
+}
