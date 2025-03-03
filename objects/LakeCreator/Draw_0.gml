@@ -88,12 +88,20 @@ if (array_length(global.zone_list) == 0) {
 	draw_sprite_ext(lakeSprite, 0, x,y-lake_offset, x_scale, y_scale, 0, c_white, 1);
 	//draw_sprite_stretched(lakeSprite, 0, x-radius*2, y-radius*2, radius*4, radius*4 + 10);
 }
-if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZONE or global.state == STATES.ANGLERFISH_PICK_ZONE or global.state ==STATES.DATA_PICK_ZONE) {
+
+// draws the pulsing circle when selecting a zone
+if (global.state == STATES.SCAN_PICK_ZONE or global.state == STATES.FISH_PICK_ZONE or global.state == STATES.ANGLERFISH_PICK_ZONE or global.state ==STATES.DATA_PICK_ZONE) {	
 	blink += 0.1
 	draw_set_alpha(0.5*sin(blink));
 	if (global.state == STATES.DATA_PICK_ZONE) {
 		for (var i = 0; i < slice_count; i++) {
 			if (!global.zone_list[i].show_fish) {
+				draw_sprite_ext(global.zone_sprite, 0, x,y-lake_offset, 2, 2, (-i*360)/ slice_count, c_green, 0.5*sin(blink))
+			}
+		}
+	} else if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
+		for (var i = 0; i < slice_count; i++) {
+			if (!global.zone_list[i].show_fish and !zoneAdjacentToFish(i, FishId.RedHerring)) {
 				draw_sprite_ext(global.zone_sprite, 0, x,y-lake_offset, 2, 2, (-i*360)/ slice_count, c_green, 0.5*sin(blink))
 			}
 		}

@@ -32,6 +32,7 @@ if (global.Tstep < 4 and global.level == 1 and array_length(global.actionList) >
 
 		// Show Angler Button
 		instance_activate_object(FindAnglerButton);
+		object_set_visible(FindAnglerButton, true);
 		instance_deactivate_object(GoFishButton);
 		
 		// Spawn the definition for Anglerfish 

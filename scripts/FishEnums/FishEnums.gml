@@ -99,3 +99,28 @@ function revealedFish() {
 	}
 	return count;
 }
+
+// Reads fish list to see how many non-empty fish there are
+function fishCount() {
+	var count = 0;
+	for (var i = 0; i < array_length(global.fish_list); i++) {
+		if (global.fish_list[i] != FishId.Empty) {
+			count += 1;
+		}
+	}
+	return count;
+}
+
+// returns true if the zoneId given is of a zone adjacent to the given fish
+// if requireRevealed is true, 
+// even if the zone is adjacent to the given fish but the fish is not revealed,
+// it returns false
+function zoneAdjacentToFish(zoneId, fishId, requireRevealed=true) {
+	var counterClockwiseZone = global.zone_list[(zoneId + array_length(global.zone_list) - 1) % array_length(global.zone_list)]
+	var clockWiseZone =  global.zone_list[(zoneId + 1) % array_length(global.zone_list)]
+	var counterClockwiseZoneHasFish = counterClockwiseZone.fishId == fishId;
+	var clockWiseZoneHasFish = clockWiseZone.fishId == fishId;
+	var isAdjacent = counterClockwiseZoneHasFish  or clockWiseZoneHasFish;
+	var canReveal = !requireRevealed or ((clockWiseZoneHasFish and clockWiseZone.show_fish) or (counterClockwiseZoneHasFish and counterClockwiseZone.show_fish))
+	return canReveal;
+}
