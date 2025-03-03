@@ -1,7 +1,7 @@
 
 // description and any other graphics
 if (fishId == FishId.Anglerfish) {
-	draw_sprite(AnglerfishDefinition, 0, x, y)
+	draw_sprite_ext(AnglerfishDefinition, 0, x, y, image_xscale, image_yscale, 0, c_white, 1.0)
 } else if (fishId == FishId.RedHerring) {
 	draw_sprite(RedHerringDefinition, 0, x, y)
 } else if (fishId == FishId.Empty) {

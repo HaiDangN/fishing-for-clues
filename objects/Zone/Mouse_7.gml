@@ -128,18 +128,22 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			instance_activate_object(LevelButton);
 			LevelButton.visible = true;
 	    } else {
-			GenericTextbox.label = "";
-			// If player selects incorrectly.
-	        show_debug_message(zoneId);
-			layer_set_visible("Gameover", true);
+			if (global.level != 1) {
+				GenericTextbox.label = "";
+				// If player selects incorrectly.
+		        show_debug_message(zoneId);
+				layer_set_visible("Gameover", true);
 			
-			// Specifically to re-activate in levels +3
-			instance_activate_object(LevelButton);
-			LevelButton.visible = true;
+				// Specifically to re-activate in levels +3
+				instance_activate_object(LevelButton);
+				LevelButton.visible = true;
 			
-			// Disables game buttons and fish survey.
-			event_user(0);
-			global.lose = true;
+				// Disables game buttons and fish survey.
+				event_user(0);
+				global.lose = true;
+			} else {
+				GenericTextbox.label = "Anglerfish cannot be next to the Red Herring!";
+			}
 	    }
 		
 		// Logging stuff

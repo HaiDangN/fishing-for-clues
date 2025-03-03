@@ -3,7 +3,9 @@
 // Turn off lake survey
 instance_deactivate_layer("LakeSurveyEntries");
 
-
+if (global.level == 1) {
+	instance_deactivate_object(FishDefinitionTemplate);	
+}
 // Turn off ability buttons
 instance_deactivate_object(FindAnglerButton);
 instance_deactivate_object(GoFishButton);
