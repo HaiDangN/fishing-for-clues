@@ -105,7 +105,6 @@
     {"id":{"name":"TabButton","path":"objects/TabButton/TabButton.yy",},},
     {"id":{"name":"tempGoTOLevel","path":"objects/tempGoTOLevel/tempGoTOLevel.yy",},},
     {"id":{"name":"Zone","path":"objects/Zone/Zone.yy",},},
-    {"id":{"name":"StarPath","path":"paths/StarPath/StarPath.yy",},},
     {"id":{"name":"EndOfLevels","path":"rooms/EndOfLevels/EndOfLevels.yy",},},
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
@@ -196,8 +195,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
