@@ -19,6 +19,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			layer_set_visible("LakeSurveyEntries", true);
 			
 			global.Tstep +=1;
+			instance_deactivate_object(LevelButton)
 		}
 	}
 }

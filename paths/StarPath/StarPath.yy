@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"StarPath",
+  "closed":false,
+  "kind":1,
+  "name":"StarPath",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":0.0,},
+    {"speed":100.0,"x":589.5,"y":152.49219,},
+    {"speed":100.0,"x":89.5,"y":592.4922,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
