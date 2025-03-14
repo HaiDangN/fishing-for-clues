@@ -15,9 +15,9 @@ global.level = 1;
 global.win = false;
 global.lose = false;
 global.actionList = [];
-
+global.assistPlayer = false; // adaptive gameplay element
 draw_set_font(PixelFont);
-
+logPlayerAssist();
 var fish_count_map = ds_map_create();
 // Eventually change to be 1 entry per type of fish with the count
 for (var i = 0; i < array_length(global.fish_list); i++) {

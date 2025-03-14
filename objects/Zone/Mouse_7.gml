@@ -137,6 +137,10 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			}
 	    } else {
 			if (global.level != 1) {
+				if (global.level == 2) {
+					global.assistPlayer = true;
+					logPlayerAssist();
+				}
 				GenericTextbox.label = "";
 				// If player selects incorrectly.
 		        show_debug_message(zoneId);
@@ -150,6 +154,8 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 				event_user(0);
 				global.lose = true;
 			} else {
+				global.assistPlayer = true;
+				logPlayerAssist();
 				GenericTextbox.label = "Anglerfish cannot be next to the Red Herring!";
 			}
 	    }

@@ -74,7 +74,16 @@ function logStart() {
 		FirebaseFirestore(path).Update(_json);
 	}
 }
-
+function logPlayerAssist() {
+	if (variable_global_exists("userId")) {
+		var _data = {
+			assistPlayer: global.assistPlayer
+		}
+		var _json = json_stringify(_data);
+		var path = string("users/{0}", global.userId);
+		FirebaseFirestore(path).Update(_json);
+	}
+}
 function logMark(action, action_num) {
 	if (variable_global_exists("userId")) {
 		

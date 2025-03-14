@@ -16,6 +16,9 @@ global.fish_shown_start = [
 	false,
 	true
 ];
+if (global.assistPlayer) {
+	global.fish_shown_start[2] = true;	
+}
 global.hours = infinity;
 global.state = STATES.FREE;
 global.Tstep = 0;

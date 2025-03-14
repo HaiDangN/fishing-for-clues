@@ -16,20 +16,22 @@ global.fish_list = [
 ];
 
 global.fish_shown_start = [
-	false,
-	true,
-	false,
-	false,
-	false,
-	false,
-	true,
-	false,
-	true,
+	false, // C
+	true, // C
+	false, // P
+	false, // G
+	false, // E
+	false, // G
+	true, // C
+	false, // C
+	true, // R
 	false,
 	false,
 	false,
 ];
-
+if (global.assistPlayer) {
+	global.fish_shown_start[5] = true;	
+}
 // Debug
 //global.fish_shown_start = array_create(8, true);
 
