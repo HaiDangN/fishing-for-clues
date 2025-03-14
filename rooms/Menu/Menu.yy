@@ -6,8 +6,8 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_1FC0C888","path":"rooms/Menu/Menu.yy",},
     {"name":"inst_16DCD2EF","path":"rooms/Menu/Menu.yy",},
+    {"name":"inst_1FC0C888","path":"rooms/Menu/Menu.yy",},
   ],
   "isDnd":false,
   "layers":[
