@@ -10,11 +10,11 @@ global.fish_list = [
 
 global.fish_shown_start = [
 	false,
-	true,
 	false,
 	false,
 	false,
-	false
+	false,
+	true
 ];
 global.hours = infinity;
 global.state = STATES.FREE;

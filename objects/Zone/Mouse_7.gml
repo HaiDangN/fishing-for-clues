@@ -18,8 +18,14 @@ if (global.state == STATES.FISH_PICK_ZONE) {
 			show_fish = true;	
 		}
 		// Reset Game State
-	    global.state = STATES.FREE;
 		
+		if (global.level != 1 or (global.level == 1 and global.zone_list[0].show_fish)) {
+			if (global.level == 1) {
+				global.Tstep += 1 
+				instance_deactivate_object(GoFishButton);
+			}
+			global.state = STATES.FREE;
+		}
 		// Logging stuff
 		var action = new Action("Fish", fishFound, string(zoneId), fishFound);
 		array_push(global.actionList, action);
@@ -125,8 +131,10 @@ if (global.state == STATES.ANGLERFISH_PICK_ZONE) {
 			global.lakeSurvey = false;
 			
 			// Specifically to re-activate in levels +3
-			instance_activate_object(LevelButton);
-			LevelButton.visible = true;
+			if (global.level > 2) {
+				instance_activate_object(LevelButton);
+				LevelButton.visible = true;
+			}
 	    } else {
 			if (global.level != 1) {
 				GenericTextbox.label = "";

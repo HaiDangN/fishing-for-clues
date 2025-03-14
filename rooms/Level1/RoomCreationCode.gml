@@ -16,9 +16,6 @@ global.win = false;
 global.lose = false;
 global.actionList = [];
 
-BackButton.isActive = false
-BackButton.visible = false
-
 draw_set_font(PixelFont);
 
 var fish_count_map = ds_map_create();
@@ -39,11 +36,11 @@ var i = 0;
 var key = ds_map_find_first(fish_count_map);
 while (key != undefined) {
     var value = fish_count_map[? key];
-	var lakeSurveyEntry = instance_create_layer(177, 440 + i*66, "LakeSurveyEntries", LakeSurveyEntry);
+	var lakeSurveyEntry = instance_create_layer(177, 180 + i*66, "LakeSurveyEntries", LakeSurveyEntry);
 	lakeSurveyEntry.sprite_index = fishIdToSurveySprite(key);
 	lakeSurveyEntry.label = string(value);
 	lakeSurveyEntry.fishId = key;
-	
 	i += 1;
     key = ds_map_find_next(fish_count_map, key);
 }
+

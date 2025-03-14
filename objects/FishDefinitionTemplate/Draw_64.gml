@@ -1,4 +1,4 @@
-
+depth = 10
 // description and any other graphics
 if (fishId == FishId.Anglerfish) {
 	draw_sprite_ext(AnglerfishDefinition, 0, x, y, image_xscale, image_yscale, 0, c_white, 1.0)

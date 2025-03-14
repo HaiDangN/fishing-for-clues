@@ -13,6 +13,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			// Moves to next step in the tutorial.
 			global.lakeSurvey = true;
 			visible = false;
+			instance_create_layer(0, 0, "FishDefinitionLayer", NewFishDisplay)
 			
 			global.Tstep += 1;
 		}

@@ -1,6 +1,7 @@
 
 
-var lake_offset = array_length(global.fish_list) <= 6 ? 20 : 0
+//var lake_offset = array_length(global.fish_list) <= 6 ? 20 : 0
+var lake_offset = 0
 
 function draw_lake(_x, _y, _radius, _col, _alpha, zones){
 	var sprite_surface_id = surface_create(_radius *2 + 10, _radius*2 + 10); // Create a blank surface
