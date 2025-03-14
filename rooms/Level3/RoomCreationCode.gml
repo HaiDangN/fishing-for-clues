@@ -21,7 +21,7 @@ global.fish_shown_start = [
 	false,
 ];
 if (global.assistPlayer) {
-	global.fish_shown_start[2] = true;	
+	global.fish_shown_start[3] = true;	
 }
 // Debug
 //global.fish_shown_start = array_create(8, true);
